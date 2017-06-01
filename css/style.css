@@ -224,7 +224,7 @@ background: #ff7b4a;
   text-align: center;
 }
 #service-block-wrap .holder {
-  padding: 107px 10px 79px;
+  padding: 107px 0px 79px;
   position: relative;
 }
 .service-list {
@@ -233,7 +233,7 @@ background: #ff7b4a;
   padding: 0;
   list-style: none;
 }
-.service-block .service-list li {
+#service-block-wrap .service-list > li {
     padding: 0 0;
     margin-bottom: 50px;
     overflow: hidden;
@@ -252,17 +252,90 @@ background: #ff7b4a;
   font-weight: 500;
 }
 .h3-style {
-  margin-bottom: 15px;
   font-size: 32px;
   line-height: 41px;
   font-weight: 700;
   color: #ff7b4a;
   margin: 0 0 15px;
 }
-.photo-info {
+.img-holder {
+  height: 254px;
+  width: 40%;
+  max-width: none;
+  left: 32px;
+  position: absolute;
+  top: 50%;
+  margin: 0;
+  transform: translateY(-50%);
+  text-align: left;
+}
+#service-block-wrap .service-list ul {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#service-block-wrap .service-list ul li {
+  margin: 0;
+  padding-left: 28px;
+  position: relative;
+}
+#service-block-wrap .service-list ul li:before {
+  top: 13px;
+  width: 6px;
+  height: 6px;
+  left: 10px;
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: #000;
+}
+#service-block-wrap .service-list > li.pull-right .text-holder {
+    padding: 0 80px 0 0;
+    float: left;
+}
+#service-block-wrap .service-list > li.pull-right .img-holder {
+    padding: 0 80px 0 0;
+    float: left;
+    height: 220px;
+    left: auto;
+    right: 50px;
+    top:40%;
+    text-align: right;
+}
+
+#service-block-wrap .holder:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 5px;
+    border-radius: 2px;
+    background: #ff7b4a;
+}
+#small-info-wrap {
+    text-align: center;
+}
+#small-info-wrap .holder {
+    padding: 82px 10px 47px;
+    position: relative;
+}
+.small-info {
   float: left;
   height:400px;
   text-align: center;
+}
+
+#small-info-wrap .holder:after {
+    content: '';
+    /*position: absolute;*/
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 5px;
+    border-radius: 2px;
+    background: #ff7b4a;
 }
 /* footer css */
 #footer {
