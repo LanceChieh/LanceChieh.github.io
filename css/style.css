@@ -412,6 +412,70 @@ background: #33CCFF;
   line-height: 38px;
   letter-spacing: 2px;
 }
+#process-wrap .process-list li.pull-right {
+    float: right;
+}
+.process-list li:first-child:after {
+    font-size: 50px;
+    line-height: 1;
+    content: '➤';
+    position: absolute;
+    top: 37%;
+    right: -20px;
+    color: #ff7b4a;
+    transform: translateY(-50%);
+}
+.process-list li:nth-child(even):after {
+  font-size: 50px;
+  margin: 0 -45px 0 0;
+  bottom: 70px;
+  line-height: 1;
+  content: '➤';
+  position: absolute;
+  right: 50%;
+  color: #ff7b4a;
+  transform: translateX(-50%) rotate(90deg);
+}
+.process-list li:nth-child(3):after {
+    font-size: 50px;
+    line-height: 1;
+    content: '➤';
+    position: absolute;
+    top: 37%;
+    left: -13px;
+    color: #ff7b4a;
+    transform: translateY(-50%)rotate(180deg);
+}
+.process-list li:nth-child(5):after {
+    font-size: 50px;
+    line-height: 1;
+    content: '➤';
+    position: absolute;
+    top: 37%;
+    right: -20px;
+    color: #ff7b4a;
+    transform: translateY(-50%);
+}
+.process-list li:nth-child(7):after {
+    font-size: 50px;
+    line-height: 1;
+    content: '➤';
+    position: absolute;
+    top: 37%;
+    left: -13px;
+    color: #ff7b4a;
+    transform: translateY(-50%)rotate(180deg);
+}
+.process-list li:nth-child(9):after {
+    font-size: 100px;
+    line-height: 1;
+    content: '=';
+    position: absolute;
+    top: 30%;
+    right: -20px;
+    color: #ff7b4a;
+    transform: translateY(-50%);
+}
 /* footer css */
 #footer {
   padding-bottom: 60px;
@@ -475,7 +539,7 @@ background: #33CCFF;
  border-radius: 5px;
 }
 .btn-fb:visited{
-  background-color: #33CCFF;
+  background-color: #1677CB;
   color: white;
   text-decoration: none;
 }
@@ -501,4 +565,249 @@ background: #33CCFF;
   background-color: #1677CB;
   color: white;
   text-decoration: none;
+}
+/* For apply page */
+ .billing-wrap .holder {
+  padding: 60px 10px;
+  position: relative;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+.billing-wrap .tabset {
+  padding: 0;
+  margin: 0px auto 100px;
+  max-width: none;
+  display: block;
+  text-align: center;
+  letter-spacing: -6px;
+  border: 8px solid #33CCFF;
+  border-radius: 15px;
+  list-style: none;
+}
+.billing-wrap .tabset li {
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 5px;
+  padding: 6px 8px;
+  display: inline-block;
+  vertical-align: top;
+  font-weight: 700;
+  position: relative;
+}
+
+.tab-holder {
+  padding:60px 0 0 0;
+}
+.tab-content {
+  position: relative;
+}
+/*For billing-footer*/
+.billing-footer {
+  overflow:hidden;
+}
+.billing-footer-text{
+font-size: 20px;
+line-height: 36px;
+margin: 0 0 45px;
+font-weight: 400;
+letter-spacing: 1px;
+max-width: 670px;
+}
+/* For price page*/
+.price-details {
+  padding: 20px 0;
+}
+
+.price-holder {
+  margin: 0 0 147px;
+  display: block;
+}
+.price-table {
+  text-align: center;
+  margin: 0 0 20px;
+  overflow:hidden;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.price-table th {
+  font-size: 36px;
+  line-height: 40px;
+  padding: 15px 10px;
+  vertical-align: bottom;
+  font-weight: 700;
+  border-bottom: solid 4px #33CCFF;
+  text-align: center;
+  height: 93px;
+}
+.price-table th:first-child {
+  text-align: left;
+}
+.price-table th .img {
+  display: block;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+.pricr-table tr {
+  vertical-align: middle;
+}
+.price-table td {
+  font-size: 20px;
+  line-height: 24px;
+  vertical-align: middle;
+  border-bottom: solid 2px #d8d7d5;
+  padding: 20px 10px;
+  height: 93px;
+}
+.price-table td:first-child {
+  text-align: left;
+}
+.price-table tbody tr:last-child td:first-child {
+  position: relative;
+}
+.price-table tbody tr:last-child td:first-child:after {
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: -9999px;
+    margin: 0 auto;
+    position: absolute;
+    right: -9999px;
+    border: double 4px #33CCFF;
+}
+.price-table tbody:last-child tr:last-child td:first-child:after {
+  border: 0;
+}
+.price-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.price-table tbody:last-child tr:last-child {
+  border-bottom: 4px solid #33CCFF;
+}
+.price-note {
+  margin: 0 0 25px 0;
+  list-style-type: none;
+}
+.price-note > li {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+.btn-holder {
+  text-align: center;
+}
+.price-services {
+  font-family: "微軟正黑體";
+  margin: 0 auto 160px;
+  max-width: 670px;
+  padding: 0 15px;
+  counter-reset: num-count1;
+}
+.price-services .title {
+  font-size: 32px;
+  line-height: 36px;
+  padding: 0 0 25px 0;
+  display: block;
+  position: relative;
+  color: #1677CB;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: solid 3px #33CCFF;
+  margin: 0 0 29px 0;
+}
+.price-services .title i {
+  color: red;
+}
+.price-services li {
+  font-size: 24px;
+  line-height: 52px;
+  position: relative;
+  list-style-type: none;
+}
+.price-services li:before {
+  content: counter(num-count1) ".";
+  counter-increment: num-count1;
+  position:absolute;
+  top:0;
+  left:-29px;
+}
+/* For faq page */
+.faq-wrap {
+  padding: 0;
+}
+.faq-wrap .faq-title {
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: 5px;
+  margin: 40px 0 75px;
+  font-weight: 700;
+  color: #3A3A3A;
+  display: block;
+  text-align: center;
+}
+.faq-section-title {
+  margin-top: 64px;
+  margin: 48px 0 24px 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #33CCFF;
+}
+.faq-wrap .faq-title i {
+  color: #33CCFF;
+  padding-right: 10px;
+  position: relative;
+}
+.faq-wrap .faq-title i::after {
+  content: 'A';
+  position: absolute;
+  color: red;
+  left:40px;
+  bottom: -15px;
+  font-weight: 700;
+}
+.faq-section-title {
+  position: relative;
+}
+.faq-accordin {
+  list-style-type: none;
+  padding: 0px;
+}
+.faq-accordin li {
+  margin: 0 0 30px 0;
+}
+.faq-q {
+  padding: 0 87px 0 50px;
+  font-size: 20px;
+  line-height: 51px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+}
+.faq-q:before {
+  content: 'Q :';
+  position: absolute;
+  color: #33CCFF;
+  left:5px;
+  bottom:4px;
+  font-size: 28px;
+  line-height: 25px;
+}
+.faq-a {
+  padding: 0 0 0 50px;
+  margin-top:30px;
+  font-size: 20px;
+  line-height: 36px;
+  position: relative;
+  display:none;
+}
+.faq-a:before {
+  content: 'A :';
+  position: absolute;
+  color: red;
+  left:7px;
+  top:4px;
+  font-size: 28px;
+  line-height: 25px;
 }
