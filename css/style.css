@@ -55,10 +55,11 @@ img {
   font-weight: 700;
   position: relative;
   letter-spacing: 2px;
-  display: inline-block;
+  display: block;
   vertical-align: top;
   margin-left: 15px;
-  padding-left: 20px;
+  padding: 4px 0 4px 20px;
+  text-align: left;
 }
 #nav ul li a {
   padding: 1px 6px;
@@ -1011,7 +1012,7 @@ table {
     line-height: 29px;
     }
     /* price */
-    .price-table,.price-note,.btn-holder {
+    .price-details .price-table,.price-details .price-note,.price-details .btn-holder {
       display: none;
     }
     /* faq */
@@ -1148,6 +1149,7 @@ table {
 		display: none;
 	}
 }
+
 
 /*mobile-table */
 .M-price-details .M-price-heading {
