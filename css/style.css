@@ -21,6 +21,28 @@ a {
   overflow: hidden;
 }
 /* header css */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    .logo {
+      text-align: center;
+    }
+    .web-info {
+      text-align: center;
+    }
+    .web-info .title {
+      font-size: 19px
+    }
+
+}
+
+@media screen and (max-width:320px){
+  body{
+		width: 320px;
+	}
+}
 #header {
   position: relative;
   padding: 35px 0 25px 0;
