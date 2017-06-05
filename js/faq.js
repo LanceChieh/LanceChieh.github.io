@@ -7,3 +7,8 @@ $(document).ready(function(){
 
     });
 });
+$(document).ready(function(){
+    $(".M-price-list").click(function(){
+        $(this).find(".M-price-details").slideToggle("slow");
+    });
+});

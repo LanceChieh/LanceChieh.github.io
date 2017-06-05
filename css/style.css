@@ -17,32 +17,13 @@
 a {
   text-decoration: none;
 }
+img {
+  max-width: 100%
+}
 #wrapper {
   overflow: hidden;
 }
 /* header css */
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
-    .logo {
-      text-align: center;
-    }
-    .web-info {
-      text-align: center;
-    }
-    .web-info .title {
-      font-size: 19px
-    }
-
-}
-
-@media screen and (max-width:320px){
-  body{
-		width: 320px;
-	}
-}
 #header {
   position: relative;
   padding: 35px 0 25px 0;
@@ -206,6 +187,8 @@ a {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
+}
+.testimonial-block-img-holder img {
   border: 5px solid #33CCFF;
   border-radius: 50%;
   overflow: hidden;
@@ -230,7 +213,7 @@ a {
   text-transform: uppercase;
   }
 .personal-style:after {
-  left: 6px;
+  left: 0px;
   position: absolute;
   bottom: 0;
   height: 5px;
@@ -273,9 +256,8 @@ background: #33CCFF;
     text-align: left;
     position: relative;
 }
-.text-holder {
+#service-block-wrap .service-list .text-holder {
   text-align: left;
-  height: 280px;
   font-size: 20px;
   line-height: 32px;
   padding: 0 0 0 103px;
@@ -285,7 +267,6 @@ background: #33CCFF;
   font-weight: 500;
 }
 .h3-style {
-
   font-size: 32px;
   line-height: 41px;
   font-weight: 700;
@@ -329,7 +310,6 @@ background: #33CCFF;
   float: left;
 }
 #service-block-wrap .service-list > li.pull-right .img-holder {
-  padding: 0 80px 0 0;
   float: left;
   height: 220px;
   left: auto;
@@ -401,7 +381,6 @@ background: #33CCFF;
 }
 .process-list li {
  height: 546px;
- width: 50%;
  float: left;
  padding: 0 50px 107px;
  margin: 0 0 19px;
@@ -500,6 +479,7 @@ background: #33CCFF;
 }
 /* footer css */
 #footer {
+  clear: both;
   padding-bottom: 60px;
   display: block;
 }
@@ -533,6 +513,7 @@ background: #33CCFF;
   color: #3A3A3A;
 }
 .contact-text {
+  padding: 0;
   list-style: none;
   font-size: 20px;
   line-height: 38px;
@@ -579,8 +560,8 @@ background: #33CCFF;
  padding: 10px 15px;
  transition: 0.4s ease;
  position: fixed;
- bottom: 20px;
- right: 60px;
+ bottom: 80px;
+ right: 20px;
  opacity: 0.7;
 }
 .button:hover {
@@ -636,7 +617,7 @@ letter-spacing: 1px;
 max-width: 670px;
 }
 /* For price page*/
-.price-details {
+.price-details , .M-price-details {
   padding: 20px 0;
 }
 
@@ -722,7 +703,7 @@ table {
 }
 .price-services {
   font-family: "微軟正黑體";
-  margin: 0 auto 160px;
+  margin: 0 auto 70px;
   max-width: 670px;
   padding: 0 15px;
   counter-reset: num-count1;
@@ -754,6 +735,14 @@ table {
   position:absolute;
   top:0;
   left:-29px;
+}
+.mobile-table ul {
+  padding: 0;
+  margin: 0;
+}
+.mobile-table li {
+  list-style-type: none;
+  display: inline-block;
 }
 /* For faq page */
 .faq-wrap {
@@ -800,19 +789,23 @@ table {
   margin: 0 0 30px 0;
 }
 .faq-q {
+
+}
+.faq-q .faq-subtitle {
   padding: 0 87px 0 50px;
   font-size: 20px;
   line-height: 51px;
   font-weight: 700;
   letter-spacing: 1px;
   position: relative;
+  display: block;
 }
-.faq-q:before {
+.faq-q .faq-subtitle:before {
   content: 'Q :';
   position: absolute;
   color: #33CCFF;
   left:5px;
-  bottom:4px;
+  top:10px;
   font-size: 28px;
   line-height: 25px;
 }
@@ -832,4 +825,407 @@ table {
   top:4px;
   font-size: 28px;
   line-height: 25px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    #nav ul{
+      padding: 0px;
+      text-align: center;
+    }
+    #article .web-wrap {
+      height: 315px;
+      border-width: 5px;
+    }
+    .holder {
+      text-align: center;
+    }
+    .holder .web-info {
+      margin-bottom: 34px;
+    }
+    .holder .web-info .title {
+      font-size: 19px;
+      line-height: 1.5em;
+      font-weight: 700;
+      text-transform: capitalize;
+      display: block;
+      margin: 0 0 23px;
+      letter-spacing: 2px;
+    }
+    .holder .web-info .slogan {
+      letter-spacing: 2px;
+      line-height: 36px;
+      margin-bottom: 20px;
+      font-size: 25px;
+      font-weight: 700;
+      margin: 0 0 15px 0;
+    }
+    .holder .web-info .sub-title {
+      font-size: 21px;
+      line-height: 25px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .holder .btn-style {
+      font-size: 20px;
+      padding: 10px 20px;
+      line-height: 24px;
+      font-weight: 500;
+    }
+    /* testimonial */
+    #testimonial-block-wrap {
+      padding:  48px 0 0 0;
+    }
+    .article-heading {
+      margin: 0 0 15px;
+    }
+    .article-heading .title-style {
+      font-size: 28px;
+      line-height: 32px;
+      letter-spacing: 2px;
+    }
+    .testimonial-block-holder {
+    padding: 0 15px 34px 15px;
+    }
+    .testimonial-block-img-holder {
+    height: 160px;
+    }
+    .testimonial-block-img-holder {
+      max-width: 160px;
+    }
+    .testimonial-block-text-holder {
+      text-align: left;
+      padding: 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .personal-style {
+      font-size: 15px;
+      line-height: 24px;
+      font-weight: 500;
+      padding: 0 0 18px;
+      display: block;
+      margin: 0 0 10px;
+    }
+    .content-style {
+      font-size: 18px;
+      line-height: 31px;
+    }
+    /* service */
+    #service-block-wrap .service-list ul {
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: 2px;
+      padding-top: 150px;
+    }
+    #service-block-wrap .service-list .text-holder {
+      float: left;
+      text-align: center;
+      padding: 0px;
+    }
+    #service-block-wrap .service-list {
+    margin: 0 auto 20px;
+    max-width: 320px;
+      }
+      #service-block-wrap .service-list > li.pull-right .text-holder {
+      padding:0;
+      float: none;
+      height: initial;
+    }
+    #service-block-wrap .img-holder {
+      width: 200px;
+      left: 64px;
+      }
+    #service-block-wrap .service-list > li.pull-right .img-holder {
+    }
+    /* small-info */
+    .h3-style {
+      height: 56px;
+      margin: 0 0 8px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+    #small-info-wrap .img-holder {
+      max-width: 138px;
+      margin: 0 auto 33px;
+    }
+    /* process */
+    #process-wrap .h3-style {
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 700;
+      margin-bottom: 42px;
+    }
+    #process-wrap .img-holder {
+    white-space: nowrap;
+    margin: 0 auto 9px;
+    max-width: 210px;
+    }
+    .process-list .text-holder {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    }
+    .process-list li:first-child:after {
+        top: 72%;
+        right: 43%;
+        transform: translateX(-50%) rotate(90deg);
+    }
+    .process-list li:nth-child(3):after {
+        top: 72%;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+    }
+    .process-list li:nth-child(5):after {
+        top: 72%;
+        right: 43%;
+        transform: translateX(-50%) rotate(90deg);
+    }
+    .process-list li:nth-child(7):after {
+        top: 72%;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+    }
+    .process-list li:nth-child(9):after {
+        top: 72%;
+        right: 39%;
+        transform: translateX(-50%) rotate(90deg);
+    }
+    .contact-info .h3-style {
+    margin: 0;
+    }
+    #footer .contact-text {
+      text-align: left;
+      font-size: 16px
+    }
+    #footer .social-networks {
+      position: absolute;
+      right: 17px;
+      top: 31px;
+    }
+    /* price-services */
+    .price-services li {
+    font-size: 15px;
+    line-height: 29px;
+    }
+    /* price */
+    .price-table,.price-note,.btn-holder {
+      display: none;
+    }
+    /* faq */
+    .faq-wrap .faq-title {
+    font-size: 25px;
+    line-height: 39px;
+    margin: 30px 0 40px;
+    text-align: center;
+    }
+    .faq-wrap .faq-title i::after {
+    left: 25px;
+    }
+    .faq-wrap > .holder {
+      text-align: left;
+    }
+    .faq-accordin li {
+    margin: 0 0 15px 0;
+    }
+    .faq-q .faq-subtitle {
+      font-size: 16px;
+      line-height: 25px;
+      padding: 0 32px;
+    }
+    .faq-q .faq-subtitle:before {
+      font-size: 16px;
+      line-height: 25px;
+      top:-3px;
+    }
+    .faq-a {
+      padding: 0 0 0 30px;
+      font-size: 16px;
+      line-height: 25px;
+      font-weight: 400;
+      margin: 20px 0 20px 0;
+    }
+    .faq-a:before {
+      top: -1px;
+      left: 6px;
+      font-size: 16px;
+      line-height: 25px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+  #nav ul li {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left:9px;
+  }
+  .web-wrap {
+    height: 450px;
+  }
+  .holder .web-info .title {
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 4px;
+  }
+  .holder .web-info .slogan {
+  letter-spacing: 2px;
+  line-height: 36px;
+  margin-bottom: 20px;
+  font-size: 35px;
+  }
+  .holder .web-info .sub-title {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .holder .btn-style {
+    font-size: 24px;
+    padding: 15px 25px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+
+  .h3-style {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  #service-block-wrap .img-holder {
+    max-width: 250px
+  }
+  #service-block-wrap .service-list ul {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0;
+  }
+  /* testimonial */
+  #testimonial-block-wrap {
+    padding:  48px 0 0 0;
+  }
+  .article-heading {
+    margin: 0 0 15px;
+  }
+  .article-heading .title-style {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 2px;
+  }
+  .testimonial-block-holder {
+  padding: 0 0 34px 0;
+  }
+  .testimonial-block-img-holder {
+  height: 160px;
+  }
+  .testimonial-block-img-holder {
+    max-width: 160px;
+  }
+  .testimonial-block-text-holder {
+    text-align: left;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .personal-style {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 0 0 18px;
+    display: block;
+    margin: 0 0 10px;
+  }
+  .content-style {
+    font-size: 18px;
+    line-height: 31px;
+  }
+
+}
+@media screen and (max-width:320px){
+  body{
+		width: 320px;
+	}
+}
+@media screen and (min-width:768px){
+  .M-price-details{
+		display: none;
+	}
+}
+
+/*mobile-table */
+.M-price-details .M-price-heading {
+    padding: 0 0 10px;
+    border-bottom: 3px solid #d8d7d5;
+    list-style: none;
+    margin: 0;
+}
+.M-price-details .M-price-heading > li {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 0 5px;
+}
+.M-price-details .price-accordion {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+}
+.M-price-details .price-accordion > li {
+    border-bottom: 1px solid #d8d7d5;
+}
+.M-price-list {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: block;
+    color: #9b9b9b;
+    padding: 15px 0;
+    position: relative;
+}
+.M-price-details .M-price-list .M-price-details {
+  display: none;
+}
+.M-price-details .M-price-list .title {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0 5px 0 15px;
+}
+.M-price-details .M-price-list span {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+.M-price-details .M-price-list .M-price-details {
+  background: #f2f0e4;
+  margin: 5px -15px;
+  padding: 20px;
+}
+.M-price-details .M-price-list .M-price-details .btn-holder {
+    margin: 0 0 20px;
+}
+.M-price-details .M-price-list .M-price-details ul {
+  list-style: none;
+}
+.M-price-details .M-price-list .M-price-details ul li {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0 0 10px;
+    position: relative;
+    padding: 0 0 0 33px;
+    text-align: left;
+}
+.M-price-details .M-note-list {
+    margin: 0 0 25px;
+    padding: 0;
+    list-style: none;
+}
+.M-price-details .M-note-list > li {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    margin: 0 0 10px 20px;
+    text-align: left;
 }
