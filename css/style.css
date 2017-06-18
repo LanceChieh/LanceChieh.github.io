@@ -1,7 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-/* For desktop: */
+/* web-width */
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -14,6 +11,11 @@
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+/* For all */
+* {
+  box-sizing: border-box;
+}
 a {
   text-decoration: none;
 }
@@ -23,7 +25,8 @@ img {
 #wrapper {
   overflow: hidden;
 }
-/* header css */
+
+/* For header */
 #header {
   position: relative;
   padding: 35px 0 25px 0;
@@ -34,9 +37,11 @@ img {
   margin: 0 auto;
 }
 .logo {
-  margin: 0;
+  margin: 3px;
   float: left;
   font-size: 30px;
+  font-weight: 700;
+  color:#33CCFF;
 }
 .nav-holder {
   float: left;
@@ -74,11 +79,14 @@ img {
   color: white;
   border-radius: 6px;
 }
+#bs-example-navbar-collapse-1 .navbar-nav {
+  margin: 7.5px -15px;
+}
 .option-style {
     border-left: solid 3px #33CCFF;
     }
-/* For article css */
-/* web-wrap */
+
+/* For article web-wrap */
 .web-wrap {
   background-image: url(../img/background-castle.jpg);
   border:solid 10px #33CCFF;
@@ -107,11 +115,11 @@ img {
   letter-spacing: 5px;
   margin: 0 0 41px;
   line-height: 1.4em;
-  font-size: 52px;
+  font-size: 40px;
   font-weight: 700;
 }
 .web-info .sub-title {
-  font-size: 42px;
+  font-size: 24px;
   line-height: 46px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -141,7 +149,8 @@ img {
   color: white;
   text-decoration: none;
 }
-/* testimonial-block */
+
+/* For article testimonial */
 #testimonial-block-wrap {
   padding: 147px 0 0;
 }
@@ -223,20 +232,14 @@ img {
   background: #33CCFF;
   content: '';
     }
-.longline-style {
-clear:both;
-margin-top:40px;
-height: 5px;
-width: 100%;
-border-radius: 2px;
-background: #33CCFF;
-}
 .content-style {
   font-size: 24px;
   line-height: 41px;
   font-weight: 700;
   letter-spacing: 1px;
 }
+
+/*For atrticle service*/
 #service-block-wrap {
   text-align: center;
 }
@@ -315,10 +318,9 @@ background: #33CCFF;
   height: 220px;
   left: auto;
   right: 50px;
-  top:40%;
+  top:50%;
   text-align: right;
 }
-
 #service-block-wrap .holder:after {
   content: '';
   position: absolute;
@@ -329,6 +331,8 @@ background: #33CCFF;
   border-radius: 2px;
   background: #33CCFF;
 }
+
+/*For article smallinfo*/
 #small-info-wrap {
   text-align: center;
 }
@@ -370,6 +374,7 @@ background: #33CCFF;
   border-radius: 2px;
   background: #33CCFF;
 }
+
 /* For article process */
 #process-wrap .holder {
   padding: 88px 0 141px;
@@ -424,18 +429,18 @@ background: #33CCFF;
     position: absolute;
     top: 37%;
     right: -20px;
-    color: #ff7b4a;
+    color: #1677CB;
     transform: translateY(-50%);
 }
 .process-list li:nth-child(even):after {
   font-size: 50px;
   margin: 0 -45px 0 0;
-  bottom: 70px;
+  bottom: 50px;
   line-height: 1;
   content: '➤';
   position: absolute;
   right: 50%;
-  color: #ff7b4a;
+  color: #1677CB;
   transform: translateX(-50%) rotate(90deg);
 }
 .process-list li:nth-child(3):after {
@@ -445,7 +450,7 @@ background: #33CCFF;
     position: absolute;
     top: 37%;
     left: -13px;
-    color: #ff7b4a;
+    color: #1677CB;
     transform: translateY(-50%)rotate(180deg);
 }
 .process-list li:nth-child(5):after {
@@ -455,7 +460,7 @@ background: #33CCFF;
     position: absolute;
     top: 37%;
     right: -20px;
-    color: #ff7b4a;
+    color: #1677CB;
     transform: translateY(-50%);
 }
 .process-list li:nth-child(7):after {
@@ -465,7 +470,7 @@ background: #33CCFF;
     position: absolute;
     top: 37%;
     left: -13px;
-    color: #ff7b4a;
+    color: #1677CB;
     transform: translateY(-50%)rotate(180deg);
 }
 .process-list li:nth-child(9):after {
@@ -475,10 +480,11 @@ background: #33CCFF;
     position: absolute;
     top: 30%;
     right: -20px;
-    color: #ff7b4a;
+    color: #1677CB;
     transform: translateY(-50%);
 }
-/* footer css */
+
+/* For footer */
 #footer {
   clear: both;
   padding-bottom: 60px;
@@ -570,7 +576,8 @@ background: #33CCFF;
   color: white;
   text-decoration: none;
 }
-/* For apply page */
+
+/*For article billing-wrap*/
  .billing-wrap .holder {
   padding: 60px 10px;
   position: relative;
@@ -605,7 +612,8 @@ background: #33CCFF;
 .tab-content {
   position: relative;
 }
-/*For billing-footer*/
+
+/*For article billing-footer*/
 .billing-footer {
   overflow:hidden;
 }
@@ -617,11 +625,11 @@ font-weight: 400;
 letter-spacing: 1px;
 max-width: 670px;
 }
-/* For price page*/
+
+/*For article price-details*/
 .price-details , .M-price-details {
   padding: 20px 0;
 }
-
 .price-holder {
   margin: 0 0 147px;
   display: block;
@@ -636,7 +644,7 @@ table {
   border-spacing: 0;
 }
 .price-table th {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 40px;
   padding: 15px 10px;
   vertical-align: bottom;
@@ -660,7 +668,7 @@ table {
   font-size: 20px;
   line-height: 24px;
   vertical-align: middle;
-  border-bottom: solid 2px #d8d7d5;
+  border-bottom: solid 2px #33CCFF;
   padding: 20px 10px;
   height: 93px;
 }
@@ -702,6 +710,33 @@ table {
 .btn-holder {
   text-align: center;
 }
+.btn-style2 {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  background: #33CCFF;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 5px;
+  transition: 0.4s ease;
+}
+.btn-style2:visited {
+  background: #33CCFF;
+  color: white;
+  text-decoration: none;
+}
+.btn-style2:hover {
+  background-color: #1677CB;
+  color: white;
+  text-decoration: none;
+}
+
+/*For price-services*/
 .price-services {
   font-family: "微軟正黑體";
   margin: 0 auto 70px;
@@ -745,7 +780,8 @@ table {
   list-style-type: none;
   display: inline-block;
 }
-/* For faq page */
+
+/*For article faq-wrap*/
 .faq-wrap {
   padding: 0;
 }
@@ -789,9 +825,6 @@ table {
 .faq-accordin li {
   margin: 0 0 30px 0;
 }
-.faq-q {
-
-}
 .faq-q .faq-subtitle {
   padding: 0 87px 0 50px;
   font-size: 20px;
@@ -827,15 +860,21 @@ table {
   font-size: 28px;
   line-height: 25px;
 }
+
+/* For mobile phones */
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
+
+/* For all */
     [class*="col-"] {
         width: 100%;
     }
+
+/* For header */
     #nav ul{
       padding: 0px;
       text-align: center;
     }
+/* For article web-wrap */
     #article .web-wrap {
       height: 315px;
       border-width: 5px;
@@ -844,7 +883,7 @@ table {
       text-align: center;
     }
     .holder .web-info {
-      margin-bottom: 34px;
+      margin-bottom: 24px;
     }
     .holder .web-info .title {
       font-size: 19px;
@@ -864,7 +903,7 @@ table {
       margin: 0 0 15px 0;
     }
     .holder .web-info .sub-title {
-      font-size: 21px;
+      font-size: 16px;
       line-height: 25px;
       font-weight: 700;
       letter-spacing: 2px;
@@ -875,7 +914,8 @@ table {
       line-height: 24px;
       font-weight: 500;
     }
-    /* testimonial */
+
+/* For article testimonial */
     #testimonial-block-wrap {
       padding:  48px 0 0 0;
     }
@@ -914,7 +954,8 @@ table {
       font-size: 18px;
       line-height: 31px;
     }
-    /* service */
+
+/*For atrticle service*/
     #service-block-wrap .service-list ul {
       font-size: 15px;
       line-height: 24px;
@@ -939,9 +980,8 @@ table {
       width: 200px;
       left: 64px;
       }
-    #service-block-wrap .service-list > li.pull-right .img-holder {
-    }
-    /* small-info */
+
+/*For article smallinfo*/
     .h3-style {
       height: 56px;
       margin: 0 0 8px;
@@ -952,7 +992,8 @@ table {
       max-width: 138px;
       margin: 0 auto 33px;
     }
-    /* process */
+
+/*For article process */
     #process-wrap .h3-style {
       font-size: 24px;
       line-height: 28px;
@@ -997,6 +1038,8 @@ table {
     .contact-info .h3-style {
     margin: 0;
     }
+
+/* For footer */
     #footer .contact-text {
       text-align: left;
       font-size: 16px
@@ -1006,16 +1049,19 @@ table {
       right: 17px;
       top: 31px;
     }
-    /* price-services */
+
+/*For atrticle service*/
     .price-services li {
     font-size: 15px;
     line-height: 29px;
     }
-    /* price */
+
+/*For article price-details*/
     .price-details .price-table,.price-details .price-note,.price-details .btn-holder {
       display: none;
     }
-    /* faq */
+
+/*For article faq-wrap*/
     .faq-wrap .faq-title {
     font-size: 25px;
     line-height: 39px;
@@ -1056,11 +1102,15 @@ table {
     }
 }
 @media screen and (min-width:768px) and (max-width:1024px){
+
+/* For header */
   #nav ul li {
     font-size: 16px;
     line-height: 20px;
     margin-left:9px;
   }
+
+/* For article web-wrap */
   .web-wrap {
     height: 450px;
   }
@@ -1076,7 +1126,7 @@ table {
   font-size: 35px;
   }
   .holder .web-info .sub-title {
-    font-size: 30px;
+    font-size: 16px;
     line-height: 34px;
   }
   .holder .btn-style {
@@ -1085,12 +1135,14 @@ table {
     line-height: 28px;
     font-weight: 500;
   }
-
   .h3-style {
     font-size: 24px;
     line-height: 28px;
   }
+
+/*For atrticle service*/
   #service-block-wrap .img-holder {
+    top:60%;
     max-width: 250px
   }
   #service-block-wrap .service-list ul {
@@ -1098,7 +1150,11 @@ table {
     line-height: 30px;
     padding: 0;
   }
-  /* testimonial */
+  #service-block-wrap .service-list > li.pull-right .img-holder {
+    top:60%;
+  }
+
+/* For article testimonial */
   #testimonial-block-wrap {
     padding:  48px 0 0 0;
   }
@@ -1137,7 +1193,16 @@ table {
     font-size: 18px;
     line-height: 31px;
   }
-
+  /*For article price-details*/
+  .price-table th {
+    font-size: 20px;
+  }
+  .price-table td {
+    font-size: 16px;
+  }
+  .btn-style2 {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width:320px){
   body{
@@ -1150,11 +1215,10 @@ table {
 	}
 }
 
-
-/*mobile-table */
+/*For article price-details Mobile*/
 .M-price-details .M-price-heading {
     padding: 0 0 10px;
-    border-bottom: 3px solid #d8d7d5;
+    border-bottom: 3px solid #33CCFF;
     list-style: none;
     margin: 0;
 }
@@ -1183,7 +1247,7 @@ table {
     font-weight: 700;
     letter-spacing: 2px;
     display: block;
-    color: #9b9b9b;
+    color: #33CCFF;
     padding: 15px 0;
     position: relative;
 }
