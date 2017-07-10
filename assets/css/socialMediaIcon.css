@@ -1,0 +1,46 @@
+/*
+/ Author: Lacne
+/ Date: 2017/06/30
+/ Version: 1
+/ Modify: fb、line 位置調整
+*/
+/*
+/ Author: Lacne
+/ Date: 2017/07/03.04
+/ Version: 2
+/ Modify: 1024介面完成
+*/
+/*
+/ Author: Lacne
+/ Date: 2017/07/05.06
+/ Version: 3
+/ Modify: RWD完成
+*/
+#fbicon{
+  position:fixed;
+  right:21px;/*lance20170630*/
+  bottom:150px;/*lance20170630*/
+  margin:0;
+  padding:0;
+  z-index:1000;
+}
+#lineicon{
+  position:fixed;
+  right:21px;/*lance20170630*/
+  bottom:85px;/*lance20170630*/
+  margin:0;
+  padding:0;
+  z-index:1000;
+}
+#tawkicon{
+  position:fixed;
+  right:21px;
+  bottom:20px;
+  margin:0;
+  padding:0;
+  z-index:1000;
+}
+#fbicon img, #lineicon img ,#tawkicon img{
+  width:48px;
+  height:48px
+}

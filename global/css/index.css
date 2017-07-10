@@ -1,21 +1,6 @@
 
-/*================================generic================================*/
-/*size*/
-p{
-  font-size:16px
-}
-/*icon on the right*/
-#fbicon{
-  position:fixed;
-  right:15px;
-  bottom:170px;
-  margin:0;
-  padding:0;
-}
-#fbicon img{
-  width: 80px;
-  height:80px
-}
+/*================================blog================================*/
+/*nav*/
 #lineicon{
   position:fixed;
   right:15px;
@@ -24,60 +9,41 @@ p{
   padding:0;
 }
 #lineicon img{
-  width: 71px;
-  height: 71px
+  width: 80px;
+  height: 80px
 }
-/*navbar*/
-.navbar-inverse{
-border-color:white;
-background-color:white
+#nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 0 200px;
 }
-.navbar-toggle{
-border-color:white;
-background-color:#ddd
+
+#navWords {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 900px;
+  font-family: "Microsoft JhengHei"
 }
-.navbar-brand img{
-width:62px
+
+#navWords li a {
+  text-decoration: none;
+  color: #33CCFF;
 }
-#myNavbar{
-margin-top:35px
-}
-.navbar-nav li a strong{
-  color:#33ccff
-}
-.navbar-inverse .navbar-nav>li>a {
-font-size: 16px;
-}
-.navbar-inverse .navbar-toggle{
-  border-color:white;
-}
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
-  border-color:#33ccff
+#tinichatsLogo {
+  width: 95px;
 }
 /*footer*/
-#footerbox hr{
-border: 3px solid #33ccff;
+#pineapple{
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-top: 63px;
 }
-#footerbox .row .col-12{
-margin-left:16px
-}
-/*maggie's css*/
-#sidebar{
-margin-top:172px
-}
-#blogcontent{
-  margin-top:172px
-}
-#main .container .row .col-sm-9{
-  margin-top:172px
-}
-#article-x footer h4 a{
-	color:white;
-	font-weight:bold
-}
-#article-x footer p a{
-	color:white;
-	font-weight:bold
+#pineapple p{
+  font-size: 24px
 }
 
 /*==================================================Luke's css=====================*/
@@ -174,7 +140,7 @@ hr{
 #article footer{
   font-size:24px;
   padding: 80px;;
-
+  border-bottom: 1px solid black;
 }
 #article header strong {
   color:white;
@@ -209,7 +175,7 @@ hr{
   padding: 10px;
 
 }
-/*#footer{
+#footer{
   width:100%;
   background-color: #33CCFF;
   margin-top: 50px;
@@ -217,7 +183,7 @@ hr{
   height:100px;
   line-height: 50px;
   color:white;
-}*/
+}
 @media screen and (min-width: 1200px) and (max-width:1400px){
   #social{
     margin-left: 700px;
@@ -233,9 +199,6 @@ hr{
   #logo{
     margin-left: 200px;
   }
-  .navbar-nav{
-    margin-left:76px
-  }
   #navWords {
     margin-top: 20px;
     font-size: 19px;
@@ -247,31 +210,18 @@ hr{
   }
 }
 @media screen and (min-width: 600px) and (max-width:800px){
-  #blogcontent{
-    margin-top:23px
-  }
-  #main .container .row .col-sm-9{
-    margin-top:23px
-  }
-  #sidebar{
-    margin-top:23px
-  }
-	#main .container .row{
-		margin-top:124px
-	}
   #social{
     margin-left: 300px;
   }
   #logo{
     margin-left: 100px;
   }
-  /*nav bar*/
-  .container-fluid{
-        text-align: -webkit-center
-    }
-    .navbar-brand img{
-      display:none
-    }
+  #navWords {
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 900px;
+    font-family: Microsoft JhengHei;
+  }
 }
 @media screen and (max-width:600px){
   #social{
@@ -280,12 +230,12 @@ hr{
   #logo{
     margin-left: 0px;
   }
-  .container-fluid{
-        text-align: -webkit-center
-    }
-    .navbar-brand img{
-      display:none
-    }
+  #navWords {
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 900px;
+    font-family: Microsoft JhengHei;
+  }
 }
 @media screen and (min-width:700px) and (max-width:800px){
   .navside{
@@ -348,21 +298,6 @@ hr{
 
 }
 @media screen and (max-width:600px){
-	#blogcontent{
-		margin-top:40px
-	}
-	#sidebar{
-		margin-top:0px
-	}
-	#main .container .row .col-sm-9{
-		margin-top:95px
-	}
-  p, strong{
-    font-size:16px
-  }
-  #article-x header{
-    padding-left: 0;
-  }
   #article-box{
     padding-left: 50%;
   }

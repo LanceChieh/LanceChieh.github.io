@@ -1,296 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width">
-    <title>開心公司-為你開公司最方便的小幫手</title>
-    <link href="css/style.css" rel="stylesheet" />
-        <!-- font-awesome.min.css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Latest compiled and minified CSS -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" charset= "UTF-8">
+    <meta name="description" content="替你聊為您提供即時線上文字客服服務，不同於一般的電話客服外包，無需等待漫長轉接，
+    即時在線替你回答及處理顧客的問題，想擁有高品質的顧客服務?就交給替你聊把關!"/>
+    <meta name="keywords"
+      content="即時客服 建構客服平台 客戶即時通訊 聊天機器人 線上客服 客服支援 客服委外 網路聊天 網路支援 客服軟體 客服工具 人工智能客服
+      客戶問題 推播行銷內容 自動化客服 客服 協助用戶 監控轉換 追蹤訪客 增加忠誠度 降低工作量隨時有問必答 數位化通訊服務 客戶體驗
+      自助聊天人員 傳訊息 貼近客人 從FB Messenger靠近客人 即刻支援 雲端專員 真人客服 即時服務 客服處理 商品諮詢 售後服務 線上諮詢 替你聊
+      客服系統 文字客服 客服委外 網路購物 ">
+     <title>Tinichats 替你聊，替你即時客服。</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/anchor-Top.js"></script>
-    <script src="js/helpdesk.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="assets/images/tab.png" />
+    <link rel="stylesheet" href="assets/css/index.css">
   </head>
+
   <body>
-    <div id="wrapper">
-      <!-- For header  -->
-      <!-- <header id="header" class="container">
-        <div class="holder">
-          <div class="logo col-3"><img src="img/temp.jpg" alt="Weinicompany"/></div>
-        <div class="nav-holder col-9">
-          <nav id="nav">
-            <div class="nav-option">
-              <ul>
-                <li ><a href="index.html">服務介紹</a></li>
-                <li class="option-style"><a href="apply.html">線上申請</a></li>
-                <li class="option-style"><a href="price.html">價格</a></li>
-                <li class="option-style"><a href="faq.html">問與答</a></li>
-                <li class="option-style"><a href="#">部落格</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-        </div>
-      </header> -->
-      <!-- navbar -->
-      <div class="navbar navbar-default" id="nav" style="margin-bottom: 0px;background-color: white;border-color: white;">
-        <div class="container">
-          <div class="holder">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <span class="logo">開心公司</span>
-            </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav" id="navWords">
-              <li><a href="index.html"><strong>服務介紹</strong></a></li>
-              <li><a href="apply.html"><strong>線上申請</strong></a></li>
-              <li><a href="price.html"><strong>價格</strong></a></li>
-              <li><a href="faq.html"><strong>問與答</strong></a></li>
-              <li><a href="blog.html"><strong>部落格</strong></a></li>
-            </ul>
-          </div>
-        </div>
-        </div>
-      </div>
 
-      <div id="article">
+<script>
+try {
+var switchPage = function (language) {
+  switch (language) {
+    case 'zh-cn':
+      console.log('/zh-CN' + window.location.pathname);
+      window.location.href = 'tw.html';
+      return true;
+      break;
 
-        <!-- For article web-wrap -->
-        <div class="web-wrap">
-          <div class="web-text container">
-            <div class="holder">
-              <div class="web-info col-8">
-                <h1>
-                  <span class="title">開心公司</span>
-                </h1>
-                <h2 class="slogan">寫作"開心"，讀作"開新" -<br />開心地為您開設新的公司 </h2>
-                <span class="sub-title">由簡單、快速還有專業構成的愉快體驗<br />就由我們為您獻上</span>
-              </div>
-              <a href="#" class="btn-style">立即申請</a>
-          </div>
-          </div>
-      </div>
+    case 'zh':
+    case 'zh-tw':
+      console.log('/zh-TW' + window.location.pathname);
+      window.location.href = 'tw.html';
+      return true;
+      break;
 
-      <!-- For article testimonial -->
-      <div id="testimonial-block-wrap" class="container">
-        <div class="holder">
-            <h2 class="article-heading">
-              <span class="title-style"><i class="fa fa-chevron-left" aria-hidden="true"></i>用戶好評<i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-            </h2>
-          <div class="testimonial-block-holder">
-            <div class="testimonial-block-info">
-              <div class="testimonial-block-img-holder col-3"><img src="img/PALA.jpg" alt="陳重光"/></div>
-              <div class="testimonial-block-text-holder col-9">
-                <div class="personal-style">
-                  陳重光
-                  <span>PIKA創辦人</span>
-                </div>
-                <span class="content-style">
-                  服務很棒，剛開始使用時還有點擔心會不會很難，畢竟那時聽說公司設立的流程很麻煩，要準備一大堆雜七雜八的資料，有點擔心在申請的過程中會漏掉些什麼結果還要再多跑好幾趟，但這裡卻簡明扼要的將我所需要準備的東西全部都整理好，而且碰到有不懂的地方還會耐心的告訴我該怎麼做，這真的很貼心。
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    case 'en':
+    case 'en-us':
+      console.log('/en-US' + window.location.pathname);
+      window.location.href = 'global/global.html';
+      return true;
+      break;
 
-      <!-- For atrticle service -->
-      <div id="service-block-wrap" class="container">
-        <div class="holder">
-          <h2 class="article-heading" style="margin-bottom:">
-            <span class="title-style"><i class="fa fa-chevron-left" aria-hidden="true"></i>服務特色<i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-          </h2>
-          <ul class="service-list">
-            <li class="col-12">
-              <div class="text-holder">
-               <div class="text">
-                <h3 class="h3-style">快速便利</h3>
-               <div class="img-holder">
-                <img src="img/img1.png" alt="快速方便的公司登記服務">
-               </div>
-               <ul class="">
-                 <li>隨時隨地諮詢、申請</li>
-                 <li>快速跑完公司設立</li>
-                 <li>為您準備所有所需文件</li>
-                 <li>線上即時客服</li>
-                 <li>資料準備超簡單---手機一拍就搞定</li>
-               </ul>
-               <br><br>
-               </div>
-             </div>
-            </li>
-            <li class="pull-right col-12">
-              <div class="text-holder">
-               <div class="text">
-                <h3 class="h3-style">透明價格</h3>
-               <div class="img-holder">
-                <img src="img/img2.png" alt="透明價格的記帳服務">
-               </div>
-               <ul class="col-12">
-                 <li>設立已包含政府規費、大小章、發票章等</li>
-                 <li>記帳已包含所有政府申報項目</li>
-                 <li>不用各種名目額外收費</br>(額外的特別要求會另外收費)</li>
-                 <li>服務品質有保障</li>
-               </ul>
-               <br><br>
-               </div>
-             </div>
-            </li>
-            <li class="col-12">
-              <div class="text-holder">
-               <div class="text">
-                <h3 class="h3-style">加值服務</h3>
-               <div class="img-holder">
-                <img src="img/img3.png" alt="公司設立加值服務">
-              </div>
-               <ul>
-                 <li>提供借址、商標申請等加值服務</br>（費用另算）</li>
-                 <li>提供稅務諮詢、法律顧問</li>
-                 <li>定期實務經驗分享</li>
-                 <li>定期部落格、懶人包更新</li>
-               </ul>
-               <br><br>
-               </div>
-             </div>
-           </li>
-          </ul>
-          <div class="btn-holder">
-            <a href="#" class="btn-style">立即開公司</a>
-          </div>
-        </div>
-      </div>
+    default:
+  }
 
-      <!-- For article smallinfo -->
-      <div id="small-info-wrap" class="container">
-        <div class="holder">
-          <ul>
-           <li class="col-4">
-             <h3 class="h3-style"><span>專業會計師事務所<br> 聯合服務</span></h3>
-             <div class="img-holder"><img src="img/img8.png" /></div>
-           </li>
-           <li class="col-4">
-             <h3 class="h3-style"><span>服務安心保證</span></h3>
-             <div class="img-holder"><img src="img/img9.png" /></div>
-           </li>
-           <li class="col-4">
-             <h3 class="h3-style"><span>個人隱私的嚴格控管</span></h3>
-             <div class="img-holder"><img src="img/img10.png" /></div>
-           </li>
-        </ul>
-        </div>
-      </div>
+  return false;
+};
 
-      <!-- For article process -->
-      <div id="process-wrap" class="container">
-        <div class="holder">
-          <h2 class="article-heading">
-            <span class="title-style"><i class="fa fa-chevron-left" aria-hidden="true"></i>設立流程<i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-          </h2>
-          <ul class="process-list">
-           <li class="col-6">
-             <h3 class="h3-style">1.經濟部:名稱預查</h3>
-             <div class="img-holder"><img src="img/img11.png" /></div>
-             <div class="text-holder">
-              <span class="">線上預查名稱：</span><span>1~2天</span>
-            </div>
-           </li>
-           <li class="col-6">
-             <h3 class="h3-style"><span>2.銀行:開立公司籌備處帳戶</span></h3>
-             <div class="img-holder"><img src="img/img12.png" /></div>
-             <div class="text-holder">
-             <span class="">線上預查名稱：</span><span>1~2天</span>
-           </div>
+// detect window.navigator.languages
+var found = false;
+if (typeof(window.navigator.languages) === 'object') {
+  for (var index in window.navigator.languages) {
+    console.log(window.navigator.languages[index].toLowerCase());
+    found = switchPage(window.navigator.languages[index].toLowerCase());
+    if (found) break;
+  }
+}
 
-           </li>
-           <li class="col-6 pull-right">
-             <h3 class="h3-style"><span>3.公司地址登記</span></h3>
-             <div class="img-holder"><img src="img/img13.png" /></div>
-             <div class="text-holder">
-             <span class="">線上預查名稱：</span><span>1~2天</span>
-           </div>
+if (!found) {
+  var lang = window.navigator.userLanguage || window.navigator.language;
+  var relang = lang.toLowerCase();
+  found = switchPage(relang);
+}
 
-           </li>
-           <li class="col-6">
-             <h3 class="h3-style"><span>4.收足資本額, 並準備資本額查核簽證相關文件</span></h3>
-             <div class="img-holder"><img src="img/img14.png" /></div>
-             <div class="text-holder">
-             <span class="">線上預查名稱：</span><span>1~2天</span>
-           </div>
+if (!found) {
+  window.location.href = 'global/global.html';
+}
+} catch (e) {
+window.location.href = 'global/global.html';
+}
+</script>
 
-           </li>
-           <li class="col-6">
-             <h3 class="h3-style"><span>5.經濟部: 公司登記 </span></h3>
-             <div class="img-holder"><img src="img/img15.png" /></div>
-             <div class="text-holder">
-             <span class="">線上預查名稱：</span><span>1~2天</span>
-           </div>
 
-           </li>
-           <li class="col-6">
-             <h3 class="h3-style"><span>6.國稅局: 營業登記</span></h3>
-             <div class="img-holder"><img src="img/img15.png" /></div>
-             <div class="text-holder">
-             <span class="">線上預查名稱：</span><span>1~2天</span>
-           </div>
 
-           </li>
-           <li class="col-6 pull-right">
-             <h3 class="h3-style"><span>7.成立勞/健保投保單位 (check)</span></h3>
-             <div class="img-holder"><img src="img/img15.png" /></div>
-             <div class="text-holder">
-             <span class="">線上預查名稱：</span><span>1~2天</span>
-           </div>
 
-           </li>
-           <li class="col-6">
-             <h3 class="h3-style"><span>8.(如需進出口貿易)國際貿易局: 出進口廠商登記 (check)</span></h3>
-             <div class="img-holder"><img src="img/img15.png" /></div>
-             <div class="text-holder">
-             <span class="">線上預查名稱：</span><span>1~2天</span>
-           </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Live Chat -->
+    <script src="assets/js/helpdesk.js"></script>
+    <!-- GA -->
+    <script src="assets/js/ga.js"></script>
+    <!-- firebase -->
+    <script src="assets/js/firebaseConfig.js"></script>
+    <!-- 歐付寶 -->
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 
-           </li>
-           <li class="col-6">
-             <h3 class="h3-style"><span>總天數合計</span></h3>
-             <div class="img-holder"><img src="img/img15.png" /></div>
-             <div class="text-holder">
-             <span class="">線上預查名稱：</span><span>1~2天</span>
-           </div>
-
-           </li>
-        </ul>
-        </div>
-      </div>
-      </div>
-
-      <!-- For footer -->
-      <div id="footer" class="container">
-        <div class="holder">
-          <a class="button" href="#top" class="btn btn-info" role="button"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
-          <div class="contact-info">
-           <ul class="contact-text">
-            <h3 class="h3-style">聯繫我們</h3>
-            <li>地址：台北市信義區信義路四段415號9樓</li>
-            <li>服務時間：週一至週五 09:00 ~ 18:00</li>
-            <li>電子信箱：sales@9thflr.com</li>
-            <li>電話：02-2758-3626</li>
-           </ul>
-          </div>
-          <ul class="social-networks">
-            <li><a class="btn-fb" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-      </div>
-  </div>
   </body>
 </html>

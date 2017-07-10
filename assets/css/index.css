@@ -1,0 +1,1543 @@
+/*
+/ Author: Lacne
+/ Date: 2017/06/29
+/ Version: 1
+/ Modify: 首頁pricing RWD調整
+*/
+/*
+/ Author: Lacne
+/ Date: 2017/06/30
+/ Modify: index css 樣式彙整
+*/
+/*
+/ Author: Lacne
+/ Date: 2017/07/03.04
+/ Version: 2
+/ Modify: 1024介面完成
+*/
+/*
+/ Author: Lacne
+/ Date: 2017/07/05.06
+/ Version: 3
+/ Modify: RWD完成
+*/
+/*talbe trial begins*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    padding: 8px;
+}
+h2 {
+  font-size: 40px;
+}
+#pricingpack2-caption, #contact-caption {
+  font-size: 51px;
+  text-align: center;
+}
+#contact-caption h3 {
+  font-size: 40px;
+}
+#Indexcontact div>p {
+  font-size: 24px;
+  padding-top: 0px;
+}
+#price-caption {
+  font-size: 35px;
+  text-align: center;
+  margin: 15px;
+}
+
+/*trial*/
+.overlay {
+   background:transparent;
+   position:relative;
+   width:100%;
+   height:480px; /* your iframe height */
+   top:480px;  /* your iframe height */
+   margin-top:-475px;  /* your iframe height */
+}
+
+/*============================================General====================================*/
+body{
+  font-family: Microsoft JhengHei;
+}
+p {
+  font-size: 24px;
+}
+h1{
+  font-size:80px;
+}
+.paragraph{
+  font-size:20px;
+    margin-top: 15px;
+    line-height: 160%;
+}
+.keyreply-brand {
+  display:none;/*lance20170702*/
+}
+  /*=================================================Index==================================*/
+  /*slogan*/
+  #Indexslogan {
+    color: white;
+    background-color: #33CCFF;
+    margin-top: 90px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #Indexslogan aside{
+    float:left;
+  }
+#IndexSloganText{
+	font-size:72px
+}
+  #Indexslogan aside div{
+  	font-size: 26px;
+  }
+  #Indexslogan .col-5 img{
+  	width:310px;
+    height: 250px;
+  }
+  #Indexslogan .col-5 {
+    text-align: center;/*lance20170702*/
+  }
+  #Indexslogan .col-5 h2{
+    font-size: 30px;/*lance20170702*/
+    letter-spacing: 6px;/*lance20170702*/
+  }
+  #newadd {
+    font-size: 24px;/*lance20170703*/
+    line-height: 150%;/*lance20170702*/
+    padding-top: 24px;/*lance20170703*/
+  }
+  .title-sub {
+  font-size: 80px;/*lance20170702*/
+  }
+#SloganText{
+	font-size:35px
+}
+
+  /*video*/
+  .IndexVideo2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height:350px;
+    /*border:2px solid black*/
+  }
+  .videotitle {
+    font-size: 40px;
+    line-height: 300px;
+  }
+  .IndexVideo2 .col-5{
+  float: left;
+  height:200px;
+  /*border:2px solid black*/
+  }
+
+  .IndexVideo2 .col-7{
+    float: left;
+    height:400px;
+  }
+  #introVideo {
+    width: 600px;
+    height: 350px;
+  }
+
+  /*Introduction 2 */
+  #Indexintro2 header{
+    font-weight:bold;
+    font-size:51px
+  }
+  #Indexintro2 {
+    background-color: #33CCFF;
+    color: white;
+    padding-top:50px;
+    padding-bottom: 50px;
+  }
+
+  .Intro2Bottom .col-5, .col-7{
+    float:left
+  }
+
+  .fontOneHundreds {
+      font-size: 90px;
+	  padding-left:0px
+  }
+  .firstFlexbox{
+    float:left;
+      }
+
+    .FlexBox aside{
+    	float:left
+    }
+    .intro-img{
+      text-align: center;
+    }
+  /*end of intro2*/
+
+
+
+
+  #MarketingTop{
+    /*height:250px;*/
+    border: 2px solid black
+  }
+  .MarketingTopBox {
+    border: solid 1px grey;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .TopLeft{
+    float:left;
+    width:60%
+  }
+
+  .TopRight{
+    float:left;
+  }
+
+  #MarketingTop2{
+    height:250px;
+    border: 2px solid red;
+  }
+
+  .BottomLeft{
+    margin-left:450px;
+    float:left
+    }
+
+  .material-icons{
+    font-size: 200px;
+    padding-top: 15px;
+  }
+
+
+
+
+  #everyday{
+    font-size:20px
+  }
+
+
+
+  #tinichatsLogo {
+    width: 95px;
+  }
+
+  #talkImg {
+    width: 346.66px;
+    height: 257.95px;
+  }
+
+
+
+  #slogan, #intro1, #intro2, .wordIntro {
+    /*border: solid 2px black;*/
+    padding: 100px;
+  }
+
+  #contact {
+    padding: 50px 200px;
+  }
+
+  #pricingpack {
+    padding: 100px 300px;
+  }
+
+
+
+  #slogan header, #slogan p {
+    text-align: left;
+    font-weight: 900;
+  }
+
+
+
+
+  /*Featurse*/
+  #features3asdfa h3{
+    font-size:40px;
+    text-align:center;
+
+  }
+  #featuresBlock1st{
+    margin-bottom:50px
+  }
+  #featuresBlock{
+    margin-bottom:50px
+  }
+  #features3asdfa{
+
+    margin-bottom: 30px;
+
+  }
+  .box1 {
+    /*margin-right: 20px;*/
+    float:left;
+    border: solid 1px grey;
+    text-align: center;
+    /*padding: 22px 22px 150px 22px;*/
+    width: 31%;
+    height: 400px;
+    padding: 10px
+  }
+  #featuresBlock1st .col-4 h3 {
+    font-size: 28px;
+  }
+  #featuresBlock1st .col-4 #newadd{
+    font-size: 20px;
+    text-align: left;
+  }
+  #pricingpack2{
+    /*overflow:hidden;*/
+    height: 815px;
+      padding-top:15px;
+      padding-bottom: 30px;
+      background-color:#33ccff;
+      color:white;
+
+  }
+
+
+
+  .lightb {
+    color: #33ccff;
+  }
+  /*Form*/
+  #Indexcontact{
+    margin-top: 20px;
+  }
+
+  #Indexcontactp{
+	  text-align: center
+    font-size:15px;
+  }
+  fieldset {
+    /*margin-left: 48px;*/
+    font-size: 1.5em;
+    border: none;
+  }
+
+  select, #textinput {
+    font-size: 14px;
+    height: 45px;
+  }
+
+  textarea {
+    font-size: 16px;
+    height: 200px;
+  }
+
+  form {
+    /*border-bottom: 3px solid #33CCFF;*/
+    margin-bottom: 10px;
+
+  }
+
+
+  #intro1title{
+    text-align: left;
+  }
+
+  #intro2, #pricingpack {
+    background-color: #33CCFF;
+    color: white;
+    width: 100%;
+  }
+
+  #featureTitle {
+    text-align: center;
+  }
+  #privacy{
+    font-size:10px;
+  }
+  .box {
+    border: solid 1px grey;
+    text-align: center;
+    height: 500px;
+    padding: 50px;
+  }
+
+
+  /*Pricing start*/
+  #tables,#tables2,#tables3{
+    height:650px;
+    border: white 3px solid;
+    position: relative;
+  }
+
+  .content {
+      padding: 30px 0;
+  }
+
+  .pricing {
+    position: relative;
+    margin-bottom: 15px;
+    border: 3px solid #eee;
+    height: 500px;
+  }
+
+  .pricing-active {
+    border: 3px solid #36d7ac;
+    margin-top: -10px;
+    box-shadow: 7px 7px rgba(54, 215, 172, 0.2);
+  }
+
+  .pricing-head {
+    text-align: center;
+    margin-top: -30px;
+  }
+
+  .pricing-head h3,
+  .pricing-head h4 {
+    margin: 0;
+    line-height: normal;
+  }
+
+  .pricing-head h3 span,
+  .pricing-head h4 span {
+    display: block;
+    margin-top: 5px;
+    font-size: 24px;
+    font-style: none;
+    text-align: left;
+  }
+
+  .pricing-head h3 {
+    font-weight: 300;
+    color: #fafafa;
+    padding: 12px 0;
+    font-size: 27px;
+    background: #33CCFF;
+    border-bottom: solid 1px #41b91c;
+       margin:15px;
+  }
+
+  .pricing-head h4 {
+    color: black;
+    padding: 5px 0;
+    font-size: 45px;
+    font-weight: 300;
+    background: #fbfef2;
+    border-bottom: solid 1px #f5f9e7;
+  }
+
+  .pricing-head-active h4 {
+    color: #36d7ac;
+  }
+
+  .pricing-head h4 i {
+    font-size: 20px;
+    font-style: normal;
+  }
+
+  .pricing-head h4 span {
+    top: -10px;
+    font-size: 14px;
+    font-style: normal;
+    position: relative;
+  }
+
+  .pricing-content li {
+    /*color: #888;*/
+    color: white;
+    font-size: 24px;
+    padding: 7px 15px;
+    border-bottom: solid 1px #f5f9e7;
+  }
+
+  .pricing-footer {
+    position: absolute;/*lance20170704*/
+    color: #777;
+    text-align: center;
+    bottom:0;/*lance20170704*/
+    padding-bottom: 50px;/*lance20170704*/
+      width: 100%;/*lance20170704*/
+  }
+
+  .pricing-footer2 {
+    position: absolute;/*lance20170704*/
+    color: #777;
+    text-align: center;
+    bottom:0;/*lance20170704*/
+    padding-bottom: 50px;/*lance20170704*/
+    width: 100%;/*lance20170704*/
+  }
+  .pricing-footer3{
+    position: absolute;/*lance20170704*/
+      text-align:center;
+      bottom:0;/*lance20170704*/
+      padding-bottom: 50px;/*lance20170704*/
+      width: 100%;/*lance20170704*/
+  }
+  /*Priceing Active*/
+  .price-active,
+  .pricing:hover {
+    z-index: 9;
+  }
+
+  .price-active h4 {
+    color: #36d7ac;
+  }
+
+  .no-space-pricing .pricing:hover {
+    transition: box-shadow 0.2s ease-in-out;
+  }
+
+  .no-space-pricing .price-active .pricing-head h4,
+  .no-space-pricing .pricing:hover .pricing-head h4 {
+    color: #36d7ac;
+    padding: 15px 0;
+    font-size: 80px;
+    transition: color 0.5s ease-in-out;
+  }
+
+  .yellow-crusta.btn {
+    color: #FFFFFF;
+    background-color: #f3c200;
+  }
+  .yellow-crusta.btn:hover,
+  .yellow-crusta.btn:focus,
+  .yellow-crusta.btn:active,
+  .yellow-crusta.btn.active {
+      color: #FFFFFF;
+      background-color: #cfa500;
+  }
+/*tooptip*/
+#tooltip {
+    position: absolute;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    font-size:18px;
+
+
+}
+
+#tooltip #tooltiptext {
+ visibility: hidden;
+ width: 120px;
+ background-color: black;
+ color: black;
+ text-align: center;
+ border-radius: 6px;
+ padding: 5px 0;
+ font-size: 18px;
+ line-height: 135%;
+
+ /* Position the tooltip */
+ position: absolute;
+ z-index: 1;
+ bottom: 100%;
+ left: 50%;
+ margin-left: -60px;
+}
+
+#tooltip:hover #tooltiptext {
+    visibility: visible;
+    color:black;
+    background-color: #fff
+}
+#tooltip #tooltiptext2 {
+
+  visibility: hidden;
+ width: 120px;
+ background-color: black;
+ color: black;
+ text-align: center;
+ border-radius: 6px;
+ padding: 5px 0;
+
+ /* Position the tooltip */
+ position: absolute;
+ z-index: 1;
+ bottom: 100%;
+ left: 50%;
+ margin-left: -60px;
+}
+
+#tooltip:hover #tooltiptext2 {
+    visibility: visible;
+    color:black;
+    background-color: white
+     font-size: 12px;
+ line-height: 135%;
+}
+#pricingpacktitle {
+  text-align: center;
+}
+#opay {
+  border: solid 1px white;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  font-size:25px;
+  padding: 5px 15px;
+}
+
+#box{
+  width:85%
+}
+.col-md-4 button>#newadd {
+  font-weight: bold;
+  margin:0px;
+  padding-top:0px;
+}
+#newadd {
+    font-size: 24px;
+    line-height: 150%;
+}
+.firstFlexbox h3 {
+    font-size: 40px;
+}
+.Intro2part2 h3 {
+  font-size: 40px;
+}
+.firstFlexbox>#newadd {
+  text-align: left;
+  font-size: 22px;
+}
+.Intro2part2>#newadd {
+  text-align: left;
+  font-size: 22px;
+}
+.box1 span .fa {
+  padding-top: 15px;
+}
+  /*bootstrap try */
+  * {
+      box-sizing: border-box;
+  }
+
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  @media only screen and (min-width:1031px) and (max-width: 1200px){
+    .videotitle {
+      height: 350px;
+    }
+    #pricingpack2-caption, #contact-caption {
+  font-size: 40px;
+  text-align: center;
+}
+  }
+
+@media only screen and (min-width:821px) and (max-width: 1030px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+    @media only screen and (max-width: 991px) {
+      .paragraph {
+        font-size: 18px;
+      }
+      .slogan-content>#newadd{
+        line-height: 200%;
+        font-size: 19px;
+      }
+    }
+p{
+  font-size:16px
+}
+#pricingpack2-caption, #contact-caption {
+  font-size: 40px;
+  text-align: center;
+}
+
+#price-caption {
+  text-align: center;
+  margin: 15px 0;
+}
+/*================index============*/
+/*slogan*/
+#Indexslogan {
+  color: white;
+  background-color: #33CCFF;
+  margin-top: 90px;
+  padding-bottom: 50px;
+  /*font-size: 1em;*/
+}
+#Indexslogan aside{
+  text-align:left;
+  padding: 0 10px;
+}
+
+#Indexslogan aside div{
+	font-size: 28px;
+
+}
+#Indexslogan .col-5 img{
+	/*width:33%;*/
+}
+
+.slogan-content {
+  /*padding: 0px 10px; lance20170702*/
+  font-size: 26px;
+  text-align: left;
+}
+#changeange{
+	font-size:26px
+}
+
+/*video*/
+.videotitle {
+  line-height: 200%;
+}
+.IndexVideo2 .col-5{
+	height: 137px;
+	text-align:center
+}
+.IndexVideo2 .col-7{
+	text-align:center
+}
+/*Introduction2*/
+.fontOneHundreds{
+	padding-left:0px
+}
+#Indexintro2 header{
+  font-size:41px
+}
+#Indexintro2{
+  text-align:-webkit-center
+}
+
+.firstFlexbox {
+  text-align: center;
+}
+.firstFlexbox header {
+  text-align: left;
+  font-size: 36px;
+}
+.Intro2part2 h3
+.Intro2Bottom .col-5, .col-7{
+  /*float:none lance20170703 */
+}
+.Intro2Bottom .col-5{
+  padding-left:0px
+}
+
+.Intro2part2 header {
+  text-align: left;
+}
+
+.Intro2part2 p {
+  text-align: left;
+  font-size: 24px;
+}
+
+/*.FlexBox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+
+.FlexBox .firstFlexbox {
+  -webkit-box-ordinal-group: 2;
+  -moz-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  -webkit-order: 1;
+  order: 1;
+} lance20170703*/
+
+/*features*/
+#featuresBlock1st{
+  margin-bottom:50px
+}
+.box1 {
+  height: 400px;
+}
+#features3asdfa{
+  /*margin-top: 100px; lance20170703*/
+  margin-bottom: 50px;
+}
+#features3asdfa header{
+  font-size: 40px;
+  text-align:center;
+  font-weight:bold
+}
+/*pricing*/
+#pricingpack2{
+  padding-top:15px
+}
+
+/*.pricing-footer{
+	margin-top:182px
+}*/
+/*.pricing-footer2{
+	margin-top:135px
+}*/
+#Indexslogan-header {
+  font-size: 51px;
+  text-align: center;
+}
+
+#tables, #tables2, #tables3 {
+  margin: 0;/*lance20170703*/
+}
+
+#contact {
+  padding: 50px 100px;
+}
+
+	#PrBox11 {
+    width: 69%;
+	margin-left:14%;
+}
+
+	#PrBox11 img {
+    margin-top: 68px;
+    width: 30%;
+    /* margin-left: 30px; */
+    margin-left: 35%;
+	}
+	#PrBox33{
+		margin-left:0px;
+		box-shadow: none
+	}
+	#PrBox44{
+		margin-left:0px
+	}
+}
+/*========================================================768 lance20170706 無作用 ============================================================*/
+/*@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+p{
+font-size:23px
+}
+#caption, #Indexslogan-header {
+  font-size: 51px;
+  text-align: left;
+}
+
+.firstFlexbox h1{
+	text-align:center
+}
+#pricingpack2-caption, #contact-caption {
+  font-size: 40px;
+  text-align: center;
+}
+
+#price-caption {
+  font-size: 40px;
+  text-align: center;
+  margin:30px 0 0 0 ;
+}
+
+    #PrPointer{
+      display: none;
+    }
+    .PrShortTable1{
+      display: none;
+    }
+    .table{
+      display: none;
+    }
+  p{
+    font-size:30px;
+  }*/
+
+    /*=====================================Index=====================*/
+/*slogan*/
+/*#Indexslogan header, #Indexslogan p{
+	text-align:center
+}
+#somanychanges strong{
+	font-size:39px
+}
+#Indexslogan {
+  padding-top:26px;
+  padding-bottom:53px;
+  text-align:center
+}
+#Indexslogan aside div{
+  font-size:30px;
+  text-align:center
+}
+#Indexslogan .col-5 {
+  margin-top: 25px;
+}
+#Indexslogan .col-5 img{
+  width:31%;*/
+  /*padding-left:17px lance20170702*/
+/*}
+
+.slogan-content {
+    padding: 0 20px;
+    font-size: 24px;
+    text-align: left;
+  }
+*/
+    /*video*/
+	/*.videotitle{
+		line-height:0px;
+	}
+	#caption{
+		text-align:center
+	}
+    .IndexVideo2{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      height:50px;*/
+      /*border:2px solid black*/
+    /*}
+	.IndexVideo2{
+	  height:316px;*/
+	  /*border:2px solid black*/
+	/*}
+    .IndexVideo2 {
+    margin-top: 43px;
+    margin-bottom: 0px;
+  }
+    .IndexVideo2 .col-5 {
+    text-align:center;
+     height: 95px;
+  }
+    .IndexVideo2 .col-7{
+      text-align:center;
+      height:0px
+    }
+*/
+    /*Introduction2*/
+	/*.Intro2part2{
+		line-height:45px;
+		padding-right: 45px;
+		    padding-left: 45px;
+
+	}
+	.fontOneHundreds{
+		padding-left:0px
+	}
+    #Indexintro2 header{
+      font-size:35px;
+	  text-align: center
+    }
+    #Indexintro2 {
+        padding-top:20px;
+        padding-bottom: 20px;
+    }
+    .material-icons{
+      font-size:130px
+    }
+    .Intro2Bottom .col-5{
+      padding-left:0px
+    }
+    #Indexintro2{
+      text-align:center
+    }
+
+	.firstFlexbox{
+		padding-right: 45px;
+		    padding-left: 45px;
+		    line-height: 45px;
+	}
+
+  .firstFlexbox header {
+    text-align: left;
+  }
+  .firstFlexbox p {
+    text-align: left;
+    font-size: 24px;
+  }
+	.Intro2Bottom .col-5{
+		padding-left:0px
+	}
+
+
+  .Intro2part2 header {
+    text-align: left;
+  }
+
+  .Intro2part2 p {
+    text-align: left;
+    font-size: 24px;
+  }
+
+    .FlexBox {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: start;
+      -moz-box-align: start;
+      -ms-flex-align: start;
+      -webkit-align-items: flex-start;
+      align-items: flex-start;
+    }
+
+    .FlexBox .firstFlexbox {
+      -webkit-box-ordinal-group: 2;
+      -moz-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      -webkit-order: 1;
+      order: 1;
+    }*/
+	/*features*/
+  /*#featuresBlock{
+    height:50px;
+
+  }
+  #features3asdfa header{
+    font-size:24px;
+    text-align:center;
+    font-weight:bold
+  }
+  #featuresBlock1st{
+    margin-bottom:0px
+  }
+	#features3asdfa{
+	  margin-top:0px;
+	  margin-bottom: 0px;
+
+	}
+  .box1 p {
+    font-size: 24px;
+	padding-left:45px;
+	padding-right:45px;
+	text-align:left
+  }*/
+    /*pricing*/
+	/*.paragraph{
+   line-height: 160%;
+   		font-size:20px;
+      margin-top: 15px;
+	}*/
+	/*.pricing-footer,.pricing-footer2,.pricing-footer3{
+		margin-top:40px
+	}*/
+/*
+  #tables{
+      height: 571px;
+    }
+	#tables2{
+	  height:663px;
+	}
+	#tables3{
+		height:640px;
+	}
+	#tables, #tables2, #tables3{
+
+	}
+  #tables, #tables2, #tables3 {
+    margin: 0 150px;
+  }
+  .pricing-footer,.pricing-footer2,.pricing-footer3{
+    padding-bottom: 25px;
+  }
+  .pricing-head {
+    text-align: center;
+    margin-top: -70px;
+  }*/
+    /*faq*/
+    /*.FaqContainer p{
+      font-size:22px
+    }
+
+
+    .box1 {*/
+      /*margin-right: 20px;*/
+      /*float:left;
+      border: solid 1px grey;
+      text-align: center;*/
+      /*padding: 22px 22px 150px 22px;*/
+      /*width: 31%;*/
+      /*height: 289px;
+      padding: 10px
+    }*/
+    /*index*/
+    /*.col-md-8 div{
+      font-size: 52px
+    }
+    .col-7 h1{
+      font-size: 52px
+    }
+
+    #features3 p{
+      font-size:24px
+    }
+    #BottomContent p{
+      font-size: 20px;
+    }
+    #tinichatsLogo {
+      width: 60px;
+      position: fixed;
+      left: 10px;
+      top: 1px;
+    }
+
+    .fontTwoHundreds {
+      font-size: 200px;
+    }
+
+
+
+.col-7 h1{
+	text-align: center
+}
+
+
+
+
+  #slogan header h1{
+      font-size: 24px;
+    }
+
+    #introVideo {
+      width: auto;
+      height: auto;
+    }
+*/
+    /*Form*/
+    /*select, #textinput {
+      font-size: 14px;
+      height: 45px;
+    }
+
+    textarea {
+      font-size: 10px;
+      height: 200px;
+    }*/
+    /*Form End*/
+    /*.box {
+      border: solid 1px grey;
+      text-align: center;
+      height: 250px;
+      padding: 20px;
+    }
+    form {
+      text-align: left;
+    }
+}*/
+/*========================================================768 lance20170706 無作用 ============================================================*/
+
+
+
+/*===========================================================736=============================================================*/
+@media only screen and (max-width: 820px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+/*generic*/
+.firstFlexbox h1{
+	text-align:center
+}
+#pricingpack2{
+	height:1760px;
+  padding-top:15px
+}
+  p{
+    font-size:20px
+  }
+/*=====================================Index=====================*/
+/*slogan*/
+#caption, #Indexslogan-header{
+	font-size:30px
+}
+#somanychanges strong{
+	font-size:30px
+}
+#Indexslogan header{
+	text-align:center
+}
+#Indexslogan p {
+}
+.slogan-content{
+	padding:0 5px;
+}
+#Indexslogan {
+  padding-top:0px;
+  padding-bottom:0px;
+  text-align:center
+}
+#Indexslogan aside div{
+	margin-bottom:20px;
+	line-height: 31px;
+    font-size: 20px;
+    text-align: center;
+}
+#Indexslogan .col-5 img{
+  /*width:44%*/
+}
+    /*video*/
+    .IndexVideo2{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      height:50px;
+      /*border:2px solid black*/
+    }
+	.IndexVideo2{
+	  height:316px;
+	  /*border:2px solid black*/
+	}
+    .IndexVideo2 {
+    margin-top: 43px;
+    margin-bottom: 0px;
+  }
+    .IndexVideo2 .col-5 {
+    text-align:center;
+     height: 95px;
+  }
+    .IndexVideo2 .col-7{
+      text-align:center;
+      height:0px
+    }
+
+    /*Introduction2*/
+	.Intro2part2{
+		line-height: 30px;
+     padding-right: 0px;
+    padding-left: 0px;
+	}
+	.Intro2part2 p{
+		font-size:20px;
+		line-height:31px;
+		padding-right:15px;
+  	  padding-left:15px
+	}
+	.firstFlexbox{
+		padding-right: 0px;
+     padding-left: 0px;
+     line-height: 30px;
+	}
+	.firstFlexbox p {
+	  font-size: 20px;
+	  line-height:31px;
+	  padding-right:15px;
+	  padding-left:15px
+	}
+	.fontOneHundreds{
+		padding-left:0px
+	}
+    #Indexintro2 header{
+      font-size:26px;
+	  text-align:center
+    }
+    #Indexintro2 {
+        padding-top:20px;
+        padding-bottom: 20px;
+    }
+    .material-icons{
+      font-size:130px
+    }
+    .Intro2Bottom .col-5{
+      padding-left:0px
+    }
+    #Indexintro2{
+      text-align:center
+    }
+
+	.firstFlexbox{
+	padding-right: 0px
+	}
+
+	.Intro2Bottom .col-5{
+		padding-left:0px
+	}
+	.Intro2Bottom .col-7{
+		padding-left: 0px
+	}
+
+    .FlexBox {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: start;
+      -moz-box-align: start;
+      -ms-flex-align: start;
+      -webkit-align-items: flex-start;
+      align-items: flex-start;
+    }
+
+    .FlexBox .firstFlexbox {
+      -webkit-box-ordinal-group: 2;
+      -moz-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      -webkit-order: 1;
+      order: 1;
+    }
+	/*features*/
+	.box1 p{
+		padding-right: 15px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 15px;
+	line-height:30px
+	}
+  #featuresBlock{
+    margin-bottom:20px
+  }
+  #features3asdfa header{
+    font-size:24px;
+    text-align:center;
+    font-weight:bold
+  }
+  #featuresBlock1st{
+    margin-bottom:0px
+  }
+	#features3asdfa{
+	  margin-top:0px;
+	  margin-bottom: 0px;
+
+	}
+    /*pricing*/
+
+	.pricing-head h4{
+		font-size:40px;
+	}
+	#price-caption{
+		font-size:26px
+    margin:15px;
+	}
+	.paragraph{
+	  font-size:20px;
+   line-height: 160%;
+       margin-top: 15px;
+
+	}
+	#tables, #tables2, #tables3{
+		margin:0px;
+	}
+	#pricingpack2-caption, #contact-caption{
+		font-size:28px;
+	}
+	/*.pricing-footer,.pricing-footer2,.pricing-footer3{
+		margin-top:40px
+	}*/
+
+    #tables{
+      height: 473px;
+    }
+	#tables2{
+	  height:546px;
+	}
+  #tables3{
+    height: 600px;
+  }
+    /*faq*/
+    .FaqContainer p{
+      font-size:22px
+    }
+
+
+    .box1 {
+      /*margin-right: 20px;*/
+      float:left;
+      border: solid 1px grey;
+      text-align: center;
+      /*padding: 22px 22px 150px 22px;*/
+      /*width: 31%;*/
+      height: 344px;
+      padding: 10px
+    }
+    /*index*/
+    .col-md-8 div{
+      font-size: 52px
+    }
+    .col-7 h1{
+      font-size: 52px
+    }
+
+    #features3 p{
+      font-size:24px
+    }
+    #BottomContent p{
+      font-size: 20px;
+    }
+    #tinichatsLogo {
+      width: 60px;
+      position: fixed;
+      left: 10px;
+      top: 1px;
+    }
+    .fontTwoHundreds {
+      font-size: 200px;
+    }
+.col-7 h1{
+	text-align: center
+}
+  #slogan header h1{
+      font-size: 24px;
+    }
+
+    #introVideo {
+      width: auto;
+      height: auto;
+    }
+
+    #contactTitle {
+      font-size: 1em;
+      text-align: center;
+    }
+
+    /*Form*/
+#Indexcontact{
+		margin-top:25px;
+}
+#Indexcontactp{
+	text-align: center;
+    font-size:15px;
+
+}
+    fieldset {
+      margin-left: 0;
+      font-size: 1em;
+    }
+
+    select, #textinput {
+      font-size: 14px;
+      height: 45px;
+    }
+
+    textarea {
+      font-size: 10px;
+      height: 200px;
+    }
+    /*Form End*/
+    .box {
+      border: solid 1px grey;
+      text-align: center;
+      height: 250px;
+      padding: 20px;
+    }
+    form {
+      text-align: left;
+    }
+#footerbox2 .row .col-12{
+	padding-left:15px;
+	padding-right:15px;
+  margin-bottom: 30px;
+
+}
+.videotitle {
+  font-size: 30px;
+  line-height: 150%;
+}
+.pricing-footer,.pricing-footer2,.pricing-footer3 {
+  padding-bottom: 20px;
+}
+}
+@media screen and (max-width:600px){
+  .title-sub {
+    font-size: 60px;
+  }
+  #Indexslogan .col-5 h2 {
+    font-size: 25px;
+  }
+  #newadd {
+    font-size: 18px;
+}
+}
+@media screen and (max-width:450px){
+#features3asdfa h3 {
+    font-size: 27px;
+}
+}
+@media screen and (max-width:424px){
+  #newadd {
+    font-size: 16px;
+}
+.firstFlexbox h3 {
+  font-size: 30px;
+}
+.firstFlexbox>#newadd {
+  font-size: 20px;
+}
+.Intro2part2>#newadd {
+  font-size: 20px;
+}
+#contact-caption h3 {
+  font-size: 30px;
+}
+#Indexcontact div>p{
+  font-size: 16px;
+}
+}
+
+@media screen and (max-width:360px){
+  body{
+		width: 100%;
+	}
+  #pricingpack2-caption, #contact-caption{
+    font-size:23px;
+  }
+  #price-caption {
+  font-size: 40px;
+  text-align: center;
+  margin: 15px;
+}
+#newadd {
+  font-size: 14px;
+}
+#featuresBlock1st .col-4 #newadd {
+  font-size: 17px;
+}
+}
+
+@media screen and (max-width:320px){
+  body{
+    width: 100%;
+  }
+  #Indexslogan .col-5 img {
+    width: 80%;
+    height: 80%;
+  }
+  #pricingpack2-caption, #contact-caption{
+    font-size:20px;
+  }
+  #pricingpack2 {
+    height: 1725px;
+  }
+  .pricing-head {
+        margin-top: -45px;
+  }
+}

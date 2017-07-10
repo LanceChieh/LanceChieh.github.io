@@ -1,357 +1,587 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>開心公司-問與答</title>
-    <link href="css/style.css" rel="stylesheet" />
-        <!-- font-awesome.min.css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Latest compiled and minified CSS -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=
+        "替你聊提供的文字客服運用現代人習慣的文字通訊方式，可以即時回應您顧客的詢問，無需等待電話客服層層轉接。你不需下載安裝軟體，即可讓您的顧客在網頁上聯絡到真人客服!"/>
+    <meta name="keywords"
+    content="即時客服 建構客服平台 客戶即時通訊 聊天機器人 線上客服 客服支援 客服委外 網路聊天 網路支援 客服軟體 客服工具 人工智能客服
+    客戶問題 推播行銷內容 自動化客服 客服 協助用戶 監控轉換 追蹤訪客 增加忠誠度 降低工作量隨時有問必答 數位化通訊服務 客戶體驗
+    自助聊天人員 傳訊息 貼近客人 從FB Messenger靠近客人 即刻支援 雲端專員 真人客服 即時服務 客服處理 商品諮詢 售後服務 線上諮詢 替你聊
+    客服系統 文字客服 客服委外 網路購物 ">
+    <title>Tinichats 替你聊 問與答</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!-- jQuery library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/images/tab.png" />
+    <link rel="stylesheet" href="assets/css/faq.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/socialMediaIcon.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/anchor-Top.js"></script>
-    <script src="js/faq.js"></script>
-    <script src="js/helpdesk.js"></script>
+    <script src="js/index.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/js/style.js"></script>
+
   </head>
   <body>
-    <div id="wrapper">
+    <!-- fb icon -->
+    <a id="fbicon" target="_blank" href="https://www.messenger.com/t/1004305116338186" >
+      <img src="assets/images/fb.png" alt="HTML tutorial" >
+    </a>
 
-      <!-- <header id="header" class="container">
-        <div class="holder">
-          <div class="logo col-3"><img src="img/temp.jpg" alt="Weinicompany"/></div>
-          <div class="nav-holder col-9">
-            <nav id="nav">
-              <div class="nav-option">
-                <ul>
-                  <li ><a href="index.html">服務介紹</a></li>
-                  <li class="option-style"><a href="apply.html">線上申請</a></li>
-                  <li class="option-style"><a href="price.html">價格</a></li>
-                  <li class="option-style"><a href="faq.html">問與答</a></li>
-                  <li class="option-style"><a href="#">部落格</a></li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </header> -->
+    <!-- line -->
+        <a id="lineicon" target="_blank" href="https://line.me/R/ti/p/@rad5112n" >
+          <img src="assets/images/oh9ei2P.png" alt="HTML tutorial" >
+        </a>
+        <a id="tawkicon" target="_blank" href="https://tawk.to/chat/58c89b6e5b8fe5150ef2cf3d/default/?$_tawk_popout=true" >
+          <img src="assets/images/tinichats_chaticon.png" alt="HTML tutorial" >
+        </a>
 
-      <!-- navbar -->
-      <div class="navbar navbar-default" id="nav" style="margin-bottom: 0px;background-color: white;border-color: white;">
-        <div class="container">
-          <div class="holder">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <span class="logo">開心公司</span>
-            </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav" id="navWords">
-              <li><a href="index.html"><strong>服務介紹</strong></a></li>
-              <li><a href="apply.html"><strong>線上申請</strong></a></li>
-              <li><a href="price.html"><strong>價格</strong></a></li>
-              <li><a href="faq.html"><strong>問與答</strong></a></li>
-              <li><a href="blog.html"><strong>部落格</strong></a></li>
-            </ul>
+		<!-- nav bar -->
+
+	    <nav class="navbar navbar-inverse navbar-fixed-top" id="topnav">
+	      <div class="container">
+	        <div class="row">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="tw.html">
+	            <img src="assets/images/tinichats_logo_web.png"  />
+	          </a>
+	        </div>
+	        <div class="collapse navbar-collapse" id="myNavbar">
+	          <ul class="nav navbar-nav">
+	            <li><a href="tw.html"><strong>關於我們</strong></a></li>
+              <li><a href="tw.html#featuresBlock" ><strong>產品特色</strong></a></li>
+	            <li><a href="Pricing.html"><strong>價錢方案</strong></a></li>
+	            <li><a href="faq.html" ><strong>問與答</strong></a></li>
+	            <li><a href="blog.html" ><strong>部落格</strong></a></li>
+				<li><a href="contact.html" ><strong>聯絡我們</strong></a></li>
+	          </ul>
+	          <ul class="nav navbar-nav navbar-right">
+	            <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+	            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+	          </ul>
+	        </div>
+
+	        </div>
+	      </div>
+	    </nav>
+
+	    <!-- nav bar ends -->
+
+
+<!-- section begins -->
+<div class="container">
+	<div class="FaqContainer">
+      <!-- head -->
+      <h2 id="FaqBoxHeader">
+  			TiniChats 問與答
+  		</h2>
+
+      <h2>
+      關於替你聊
+    </h2>
+    <br />
+<!-- 1st question -->
+      <div class="col-12 FaqQuestion" id="testQuestion">
+          <div class="Q ">
+              Q:
           </div>
-        </div>
-        </div>
+          <p >
+              什麼是文字客服?和電話客服有什麼差別?
+              <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
+          </p>
       </div>
 
-      <div id="article">
+      <div class="col-12 FaqQuestion" id="answerQuestion">
+          <div class="A">
+              A:
+          </div>
+          <p >
+            所謂的文字客服基本上就像是在使用通訊軟體一樣是用打字進行交流的，和
+            電話客服的不同的地方在於使用文字交流可以避免不好意思開口詢問的問題，
+            同時現代人大多習慣藉由通訊軟體進行交流，所以我們也採取相似的方式進行客服。
+			    </p>
+      </div>
 
-        <!-- For article faq-wrap -->
-        <div class="faq-wrap">
-          <div class="holder container">
-            <h1 class="faq-title"><i class="fa fa-quora" aria-hidden="true">&nbsp;</i>公司設立/記帳-問與答</h1>
-            <div class="faq-content">
-              <h2 class="faq-section-title">負責人篇</h2>
-              <ul class="faq-accordin">
-                <li>
-                  <span class="faq-q">
-                    <span class="faq-subtitle">
-                      請問什麼樣的人可以擔任負責人，有無需要注意的事情?
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                    </span>
-                    <p class="faq-a">需要年滿二十歲或是未成年卻已結婚這樣具有行為能力的人才能擔任負責人，但是公司負責人不能有公務人員的身分，另外如果負責人領有政府各項補助款，或退休金補助之類的東西的話，請記得要先與各補助核發單位確認，開公司當負責人後補助會不會被取消。
-</p>
-                  </span>
 
-                </li>
+<!-- </div> -->
 
-                <li>
-                  <span class="faq-q">
-                    <span class="faq-subtitle">
-                      如果公司或負責人的印章不見的話要怎麼處理?
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                    </span>
-                    <p class="faq-a">如果公司或負責人印章不見得話，就需要由公司的負責人切結聲明，然後備妥申請書、印鑑遺失切結書及登記表一式2份，之後就可已申請辦理公司或負責人印鑑變更報備。順帶一提，這個不需要支付規費。
-</p>
-                  </span>
+<!-- 2nd question -->
+  <!-- <div class="FaqBox"> -->
+      <div class="col-12 FaqQuestion" id="testQuestion2">
+          <div class="Q">
+              Q:
+          </div>
+          <p >
+              使用這個網頁需要安裝特定的軟體嗎?
+              <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
+          </p>
+      </div>
 
-                </li>
+      <div class="col-12 FaqQuestion" id="answerQuestion2">
+          <div class="A">
+              A:
+          </div>
+          <p >
+            客人您並不需要安裝任何軟體，只需要加一段程式碼將功能安插進去即可，大致上和在google的功能列上新增功能類似。
+          </p>
+      </div>
+  <!-- </div> -->
+<br/>
+<br/>
+  <h2>
+  產品/服務
+  </h2>
+  <br/>
 
-                <li>
-                  <span class="faq-q">
-                    <span class="faq-subtitle">
-                      為什麼公司登記的步驟不能自己來辦理，而且還一定要由律師或會計師來處理?
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                    </span>
-                    <p class="faq-a">因為公司的資本額必須必須要經過會計師查核簽證，而且按照公司法第7條:"公司申請登記資本額查核辦法皆有規定。需提供存摺影本、存款餘額正本給會計師進行簽證，存款餘額證明不能替代會計師資本簽證。"，所以才必須要交由會計師來處理，另外為了確保資料的可信度自然是要由第三方來做證明，而且在相關領域方面，由我們的專業人士來進行處理會比較好。
-</p>
-                  </span>
-
-                </li>
-
-              </ul>
-
-              <h2 class="faq-section-title">資本額篇</h2>
-              <ul class="faq-accordin">
-                <li>
-                  <span class="faq-q">
-                    <span class="faq-subtitle">
-                    公司的資本額有沒有限制最低是多少?
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                  </span>
-                    <p class="faq-a">公司設立已廢除最低資本額限制，因此設定多少都沒有關係，但一般會設在十萬以上，因為公司資本額可以視為公司要運作的資金，低於十萬不合理。但如果打算將資本額設立的比較高後在之後在慢慢補上去的話建議還是別這樣做會比較好，因為這樣除了只會讓您多繳規費和需要多跑好幾趟外並沒有任何的好處，通常會這麼作的大多是上市公司或是股東較多的公司，這樣的做法反倒能給他們省下不少手續，不過一般的公司就不建議這麼做了。
-</p>
-                  </span>
-
-                </li>
-
-                <li><span class="faq-q"><span class="faq-subtitle">
-                  資本額的設定會造成什麼影響?
-                  <i class="fa fa-plus" aria-hidden="true"></i>
-                </span>
-                  <div class="faq-a">如果有打算去申請貸款或是一些補助之類的東西的話，資本額的額度可能會影響到能夠申請到的額度，以一般來說，申請貸款或是補助的最高額度大多都是以資本額為限，所以如果有打算去申請的話，建議在設立資本額時將資本額設在50萬、100萬以上。
-</div>
-                  </span>
-                  </li>
-
-                  <li><span class="faq-q"><span class="faq-subtitle">
-                    資本額要放在銀行多久才可以用?
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                  </span>
-                    <div class="faq-a">最少要放上個兩天，"到銀行開設公司籌備戶、存入資本額"一天、隔天可至銀行申請"存款餘額證明"，申請完存款餘額證明後，資金就可以動用，所以最少也得放上個兩天，有些銀行則是另有規定最短全額提領日期，如果有碰到的話就要按照難個銀行的規範走才行。
+<!-- 3rd question -->
+  <div class="col-12 FaqQuestion" id="testQuestion3">
+      <div class="Q">
+          Q:
+      </div>
+      <p >
+        請問你們是怎麼知道客人要問的東西?然後你們回答的內容是從哪裡來的?
+        <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
+      </p>
   </div>
-                    </span>
-                    </li>
 
-                    <li><span class="faq-q"><span class="faq-subtitle">
-                      資本額一定要經過會計師簽證查核嗎?不能用存款餘額證明代替嗎?
-                      <i class="fa fa-plus" aria-hidden="true"></i>
-                    </span>
-                      <div class="faq-a">公司設立的時後，登記的資本額一定要經過會計師簽證，而且在公司法第7條、公司申請登記資本額查核辦法都有規定。需要提供存摺影本、存款餘額正本給會計師進行簽證，所以存款餘額證明不能替代會計師資本簽證。
+  <div class="col-12 FaqQuestion" id="answerQuestion3">
+      <div class="A">
+          A:
+      </div>
+      <p >
+        我們會事先從委託人那裡取得商品的相關資訊整理出一份客人可能會問的問題的答案。
+      </p>
+  </div>
+
+  <!-- 4th question -->
+    <div class="col-12 FaqQuestion" id="testQuestion4">
+        <div class="Q">
+            Q:
+        </div>
+        <p >
+          客人的問題你們回答不出來的話要怎麼辦?
+          <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
+        </p>
     </div>
-                      </span>
-                      </li>
 
-              </ul>
+    <div class="col-12 FaqQuestion" id="answerQuestion4">
+        <div class="A">
+            A:
+        </div>
+        <p >
+          我們會盡快向委託人連絡取得更進一步的資訊或是代替您向委託人轉達問題。
+        </p>
+    </div>
 
-              <h2 class="faq-section-title">銀行相關篇</h2>
-              <ul class="faq-accordin">
-                <li>
-                  <span class="faq-q">
-                    <span class="faq-subtitle">
-                      什麼時後將公司籌備處帳戶改成正式帳戶?
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                  </span>
-                    <p class="faq-a">將公司戶頭改成正式戶頭，基本上收到市府公文與設立登記表正本，就可以到開戶的銀行辦理。需要帶的東西每家銀行規定不同，原則上大多都是負責人本人，攜帶設立登記表正本、銀行用公司大小章、身分證，就可以辦理變更。不過有些銀行（例如國泰世華、玉山銀行、中國信託）會要求第二證件，這時就會需要公司章程或國稅局公文、購買證等當作第二證件。
-</p>
-                  </span>
+  <!-- 5th question -->
+    <div class="col-12 FaqQuestion" id="testQuestion5">
+        <div class="Q">
+            Q:
+        </div>
+        <p >
+          請問在客服人員下班後，我們的詢問的訊息會怎樣被處理，會不會被遺漏掉?
+          <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
+        </p>
+    </div>
 
-                </li>
+    <div class="col-12 FaqQuestion" id="answerQuestion5">
+        <div class="A">
+            A:
+        </div>
+        <p id="apple">
+          在您選定的客服服務時段內，網站訪客的提問基本上都能馬上獲得回應，而在客服人員下班及選定服務時段以外的時間，訪客可以留下離線訊息，我們會在次日服務時段時立刻幫您處理。
+        </p>
+    </div>
 
-                <li>
-                  <span class="faq-q">
-                    <span class="faq-subtitle">
-                      如何挑選適合辦理的銀行?
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                  </span>
-                    <p class="faq-a">基本上有兩種挑法，一種是按照自己的使用習慣，另一種則是看距離自己的住家或公司比較近的。如果是依照使用習慣來挑的話要注意有些銀行企業帳戶和個人帳戶用的是不同的系統，所以使用前請記得問清楚。另一種的話就沒有什麼須要注意的地方，因為只是單純的比較近而已，因為在那邊開戶的話，未來在辦理網銀申請、支票申請時，大多也都會在開戶的銀行辦理。
-</p>
-                  </span>
-
-                </li>
-
-                <li>
-                  <span class="faq-q">
-                    <span class="faq-subtitle">
-                      公司銀行帳戶可以開設不只一家嗎?
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                  </span>
-                    <p class="faq-a">公司戶和個人戶相似，一家公司可以在多家銀行開設帳戶，至於會這麼做的原因大多也只是因為業務需要、使用不同帳戶進行管理或是原開戶銀行使用不習慣等。
-</p>
-                  </span>
-
-                </li>
-
-                <li>
-                  <span class="faq-q">
-                    <span class="faq-subtitle">
-                      到銀行開設籌備戶需要準備些什麼?
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                  </span>
-                    <p class="faq-a">負責人本人攜帶：負責人私章、負責人雙證件、預查名稱核准書就可以去銀行辦理。大多數銀行都可以免用籌備處章（帶負責人私章就可以了），但還是會有部分銀行要求要用籌備處印章，不過籌備處章只會用到一次，所以會有點浪費，因此如果有需要的話，得要去刻籌備處章才能開戶。
-</p>
-                  </span>
-
-                </li>
-
-              </ul>
-
-              <h2 class="faq-section-title">設立登記篇</h2>
-              <ul class="faq-accordin">
-                <li>
-                  <span class="faq-q">
-                    <span class="faq-subtitle">
-                      請問會幫忙刻印章嗎?印章在使用上有差別嗎?
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                  </span>
-                    <p class="faq-a">我們的服務有包含刻公司大章、小章、發票章，不過建議公司也自行刻一組銀行用的公司章跟負責人私章會比較好。
-<br>印章的用途有三種，一個是和市政府有關的程序用的設立印鑑(就是和設立登記表相同的大小章)，另一種則是在國稅局購買發票用的發票章和私章(和設立印鑑相同或不相同都可以)，最後一種則是去跑銀行相關業務用的銀行章(雖然和設立印鑑一樣也沒關係，但是一般建議把銀行章獨立出來會比較安全，比如說跟外面的廠商簽約就用設立的印章，銀行章就只在銀行使用)。
-
-              </p>
-                  </span>
-
-                </li>
-
-                <li>
-                  <span class="faq-q">
-                    <span class="faq-subtitle">
-                      成立有限公司和成立股份有限公司有什麼差別?
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                  </span>
-                    <p class="faq-a">成立股份有限公司比較適合股東人數多、股權大小不一、或是已經有投資人的公司。只是需要注意的是一年內發起股東股份不得轉讓，而且成立時需找好：三個董事、一個監察人，四位「可以是，也可以不是」股東。
-<br>而成立有限公司則適合較適合公司創辦人1~3人、股份較平均、而且成員內「沒有小股東、投資人」這種人數較少的團隊，因為如果要做任何重大變更的話就需要股東簽名。但由於具有規定單純、手續快、名稱的保護範圍為全國、股東責任為「以出資額為限」的特性，所以人數少的團隊常先成立「有限公司」，等投資人入股要做變更時，在一起變更為股份有限公司。
-</p>
-                  </span>
-
-                </li>
-
-                <li>
-                  <span class="faq-q">
-                    <span class="faq-subtitle">
-                      如果負責人不在國外的話，能在台灣境外開始辦立公司設立的程序嗎?
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                  </span>
-                    <p class="faq-a">可以，但只有"銀行開戶"的步驟一定要負責人本人在場，如果負責人在國外，而有股東在國內的話，可以在於查的時候先用股東的名義做預查，這樣的話股東就可以去銀行壞，然後在正式送件的時候將負責人改回來就好。如果負責人在國外，而且國內也沒有股東的話，就得親自回台辦理或者是和家人協調，將家人設為股東然後依照前項辦法跑就可以了。
-<br>之後在設立完成、送完國稅局營業登記後，負責人就需要去國稅局領取購買證，如果負責人在國外，可以跟稅務員溝通代領或延期領取。設立登記辦完即可做生意、簽約等，但得至國稅局領取購買證後，才能開立統一發票。
-              </p>
-                  </span>
-
-                </li>
-
-                <li>
-                  <span class="faq-q">
-                    <span class="faq-subtitle">
-                      營業項目可以申請很多個嗎?價格會不會比較貴?
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                  </span>
-                    <p class="faq-a">營業項目的數量本身並沒有上限，但要注意的是，營業項目要符合事實，然後在排序上要以公司的"主要經營項目"、且「擴大書審稅率較低」的項目排序。之後在公司成立完後、辦理營業登記時，國稅局會審核並挑選出公司的「主要營業項目」，稅務員參考的是您的公司營業項目排序，以及辦理營業登記時所填寫的內容。要注意的是，如果在報稅的時候採用"書審"的方式，這個"主要營業項目"的類別，將會影響到書審的稅率，近而影響到"營所稅"要繳納的金額，因此請務必注意。
-<br>另外，有些營業項目是"特許營業項目"，是需要在公司設立的前或後取得許可的特許行業，為避免公司設立的流程變得複雜冗長，因此除非有需要經營，不然還是不要申請會比較好。
-</p>
-                  </span>
-
-                </li>
-
-                <li>
-                  <span class="faq-q">
-                    <span class="faq-subtitle">
-                      沒有建物所有權狀能用房屋稅單影本代替嗎?有什麼需要注意的?
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                  </span>
-                    <p class="faq-a">房屋稅單影本可以替代，建物所有權狀影本並非必要的文件，除非是在房屋所有權人為兩人以上(如果房東僅有一人，提供房屋稅單影本即可、不需提供建物所有權狀)和房屋稅單上無加註樓層，但希望登記樓層者(比如說房東擁有整棟不動產，但公司實際上只租用其中一層；或是使用親友不動產，希望降低從住宅用變成營業用的比例的情況下才需要用到，而且還可以限定樓層，將其中一層稅率變更成營業用)才會需要用到。
-<br>至於芳屋稅單影本的話只需要注意稅單影本必須是最近一期的，而且要有戳章頁，不過如果是購買新屋檢附契稅或是免繳房屋稅的情況的話，還請附房屋稅籍證明書。
-</p>
-                  </span>
-
-                </li>
-
-</ul>
-
-<h2 class="faq-section-title">勞健保篇</h2>
-<ul class="faq-accordin">
-  <li>
-    <span class="faq-q">
-      <span class="faq-subtitle">
-        如果公司在五人以下，且負責人也有在上班的話，勞健保該怎樣處理?
-      <i class="fa fa-plus" aria-hidden="true"></i>
-    </span>
-      <p class="faq-a">如果公司在五人以下，依法是可以不用設立勞保單位（五人以下都可以免勞保，但也需與員工達成共識），但健保的部分負責人一定需要在34800以上的薪資級距，因此可以考量一下看看是否有在其他公司工作。如果有，就得考慮下以下的情形了:
-<br>1.現在公司沒保，是掛在工會或其他地方→需要設立在自己公司
-<br>2.現在公司有保，且是34800以上級距→健保不需設在自己公司，維持在現在公司即可
-<br>3.如果現在公司有保，但非34800以上級距→可以設在自己公司或現在公司（如果維持在現在公司的話，未來會被追討差額），但如果是這情況，建議設在現在公司就好，之後再讓他追討，因為並不會罰只是要補回差額的健保費。以及可以省下於現在公司任職期間的勞健保費而且有勞退可領。
-</p>
-    </span>
-
-  </li>
-
-</ul>
-
-<h2 class="faq-section-title">外國人在台設立公司篇</h2>
-<ul class="faq-accordin">
-  <li>
-    <span class="faq-q">
-      <span class="faq-subtitle">
-        外國人在台灣設立公司時的步驟有什麼不同?
-      <i class="fa fa-plus" aria-hidden="true"></i>
-    </span>
-      <p class="faq-a">外國人跟本國人在台灣設立公司最大的不同，就是要多一個經濟部投資審議委員會（投審會）審核的步驟。這是大部份的國家對於外國人的投資項目及金額的規範，必須經過審核，才可以設立公司。
-
-</p>
-    </span>
-
-  </li>
-
-  <li>
-    <span class="faq-q">
-      <span class="faq-subtitle">
-        外國人在台灣設立公司能取得工作證、居留證嗎?
-      <i class="fa fa-plus" aria-hidden="true"></i>
-    </span>
-      <p class="faq-a">以目前來說如果打算要借由聘僱的身分取得的話，雇主就得要有下列的條件之一:
-<br>1.設立未滿1年者: 實收資本額或在臺營運資金達新臺幣50萬元以上、營業額達新臺幣300萬元以上、進出口實績總額達美金50萬元以上或代理佣金達美金20萬元以上。
-<br>2.設立1年以上者: 最近1年或前3年在臺平均營業額達新臺幣300萬元以上、平均進出口實績總額達美金50萬元以上或平均代理佣金達美金20萬元以上。
-
-
-</p>
-    </span>
-
-  </li>
-
-</ul>
-
+      <div class="col-12 FaqQuestion" id="testQuestion6">
+          <div class="Q ">
+              Q:
+          </div>
+          <p >
+              我在Tinichats可以得到哪些服務呢?
+              <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
+          </p>
+      </div>
+        <div class="col-12 FaqQuestion" id="answerQuestion6">
+            <div class="A">
+                A:
             </div>
-          </div>
+            <p >
+              Tinichats提供專業的線上文字客服，採用真人客服，並且滿足你在即時客服的需求，
+              例如產品詢問、買賣糾紛、帳號權限、遊戲安裝等問題，
+              依據客戶的產業客服會對訪客有不同的解答，並且聊天記錄我們會保留以供客戶查詢，
+              更進一步還能替你分析訪客分布等等的數據統計，至於數據的分析深淺取決於你的所選擇的方案
+  			    </p>
         </div>
-      </div>
 
-      <!-- For footer -->
-      <div id="footer" class="container">
-        <div class="holder">
-          <a class="button" href="#top" class="btn btn-info" role="button"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
-          <div class="contact-info col-8">
-          <ul class="contact-text">
-            <h3 class="h3-style">聯繫我們</h3>
-            <li>地址：台北市信義區信義路四段415號9樓</li>
-            <li>服務時間：週一至週五 09:00 ~ 18:00</li>
-            <li>電子信箱：sales@9thflr.com</li>
-            <li>電話：02-2758-3626</li>
-          </ul>
-          </div>
-          <ul class="social-networks col-4">
-            <li><a class="btn-fb" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          </ul>
+        <div class="col-12 FaqQuestion" id="testQuestion7">
+            <div class="Q ">
+                Q:
+            </div>
+            <p >
+                甚麼是知識庫?，而知識庫的用途是?
+                <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
+            </p>
         </div>
-      </div>
-    </div>
+          <div class="col-12 FaqQuestion" id="answerQuestion7">
+              <div class="A">
+                  A:
+              </div>
+              <p >
+                我們會將您提供的公司產品/服務的相關內容，協助您建立知識庫。若您選擇16小時方案，
+                我們更將進一步幫您彙整出訪客時常詢問但尚未在知識庫裡的問題，擴充知識庫。
+                知識庫用來供客服人員回答訪客的常見問題，讓客服人員迅速解決問題。
+    			    </p>
+          </div>
+        <div class="col-12 FaqQuestion" id="testQuestion8">
+            <div class="Q ">
+                Q:
+            </div>
+            <p >
+                訪客用手機跟平板都能連絡到文字客服嗎?
+                <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
+            </p>
+        </div>
+          <div class="col-12 FaqQuestion" id="answerQuestion8">
+              <div class="A">
+                  A:
+              </div>
+              <p >
+                電腦、手機、平板等行動裝置，只要能瀏覽網頁，都能夠進行線上文字客服。
+              </p>
+          </div>
+        <div class="col-12 FaqQuestion" id="testQuestion9">
+            <div class="Q ">
+                Q:
+            </div>
+            <p >
+                觸發訊息功能是甚麼?
+                <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
+            </p>
+        </div>
+          <div class="col-12 FaqQuestion" id="answerQuestion9">
+              <div class="A">
+                  A:
+              </div>
+              <p >
+                提供多種「迎賓訊息」，系統自動招呼訪客，避免漫長等待。
+              </p>
+          </div>
+    <br/>
+
+  </br/>
+    <h2>
+    服務時段
+    </h2>
+    <br/>
+        <div class="col-12 FaqQuestion" id="testQuestion10">
+            <div class="Q ">
+                Q:
+            </div>
+            <p >
+                請問提供「四個時段」是哪四個時段?
+                <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
+            </p>
+        </div>
+          <div class="col-12 FaqQuestion" id="answerQuestion10">
+              <div class="A">
+                  A:
+              </div>
+              <p >
+              「0700~1100」<br />「1100~1500」<br />「1500~1900」<br />「1900~2300」
+              </p>
+          </div>
+
+        <div class="col-12 FaqQuestion" id="testQuestion11">
+            <div class="Q ">
+                Q:
+            </div>
+            <p >
+                我選了「8小時」方案，是可以從你們所提供的四個時段裡任挑兩個嗎?
+                <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
+            </p>
+        </div>
+          <div class="col-12 FaqQuestion" id="answerQuestion11">
+              <div class="A">
+                  A:
+              </div>
+              <p >
+                是的。<br />但這兩個時段必須是「連續的」<br />如:<br />「0700~1100」及「1100~1500」<br />「1100~1500」及「1500~1900」<br />「1500~1900」及「1900~2300」。
+              </p>
+          </div>
+    <br/>
+
+  </br/>
+    <h2>
+    價格方案
+    </h2>
+    <br/>
+        <div class="col-12 FaqQuestion" id="testQuestion12">
+            <div class="Q ">
+                Q:
+            </div>
+            <p >
+                會有幾位客服來處理我的事務?
+                <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
+            </p>
+        </div>
+          <div class="col-12 FaqQuestion" id="answerQuestion12">
+              <div class="A">
+                  A:
+              </div>
+              <p >
+                我們會視您的訪客流量調整人員配置，確保您的顧客的都能及時地獲得協助。
+              </p>
+          </div>
+        <div class="col-12 FaqQuestion" id="testQuestion13">
+            <div class="Q ">
+                Q:
+            </div>
+            <p >
+              假如我買了「4小時」(或「8小時」「16小時」)方案，我後來需要延長時段，可以加購時數嗎?
+                <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
+            </p>
+        </div>
+          <div class="col-12 FaqQuestion" id="answerQuestion13">
+              <div class="A">
+                  A:
+              </div>
+              <p >
+            可以！<br />加購時數的計費方式將由專人為您說明。
+              </p>
+          </div>
+        <div class="col-12 FaqQuestion" id="testQuestion14">
+            <div class="Q ">
+                Q:
+            </div>
+            <p >
+                請問你們的方案有試用期嗎?
+                <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
+            </p>
+        </div>
+          <div class="col-12 FaqQuestion" id="answerQuestion14">
+              <div class="A">
+                  A:
+              </div>
+              <p >
+                沒有，請直接選擇適合您的方案開始啟用服務。若您希望先試用服務，我們建議您可以先選用「4小時」方案，之後可再升級成您想要的方案              </p>
+          </div>
+        <div class="col-12 FaqQuestion" id="testQuestion15">
+            <div class="Q ">
+                Q:
+            </div>
+            <p >
+                請問歐付寶該如何操作付款?
+                <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
+            </p>
+        </div>
+          <div class="col-12 FaqQuestion" id="answerQuestion15">
+              <div class="A">
+                  A:
+              </div>
+              <p >
+                點擊「歐付寶付款去」後，系統將會引導您操作步驟，詳情可參考歐付寶官網
+              </p>
+          </div>
+
+
+  </div>
+  </div>
+
+			   <!-- footer -->
+               <div id="footer">
+                 <div id="footerbox2" class="container">
+                 <hr />
+                   <div class="row">
+                     <div class="col-12">
+                     </br>
+						 <div class="footerstyle">
+                         <p><strong>聯繫我們</strong></p>
+                         <p><strong>地址 :</strong> 台北市信義區信義路四段415號9樓</p>
+                         <p><strong>服務時間 :</strong> 週一至週五 09:00 ~ 18:00</p>
+                         <p><strong>電話 :</strong> 02-2758-3626</p>
+                         <p><strong>電子信箱 :</strong> sales@tinichats.com</p>
+                         <p>或上<a href="https://www.facebook.com/Tinichats-%E6%9B%BF%E4%BD%A0%E8%81%8A-1004305116338186/">TiniChats 替你聊紛絲團</a></p>
+                         <div class='TP'>&copy;2017 tinichats.com
+                            <a href="terms.html"　><span>服務條款 &</span></a>
+                            <a href="privacy.html"　><span >隱私權條款</span></a>
+                         </div>
+						 </div>
+					 </div>
+                 </div>
+                 </div>
+               </div>
+
+
+
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!-- Live Chat -->
+      <!-- <script src="assets/js/helpdesk.js"></script> -->
+      <!-- GA -->
+      <script src="assets/js/ga.js"></script>
+      <!-- firebase -->
+      <script src="assets/js/firebaseConfig.js"></script>
+      <!-- 歐付寶 -->
+      <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+
+    <script>
+$(document).ready(function(){
+    $("#testQuestion").click(function(){
+        $("#answerQuestion").fadeToggle("slow");
+        $("#div3").fadeToggle(3000);
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+$("#testQuestion2").click(function(){
+
+    $("#answerQuestion2").fadeToggle("slow");
+
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+$("#testQuestion3").click(function(){
+
+    $("#answerQuestion3").fadeToggle("slow");
+
+});
+});
+</script>
+
+
+
+
+<script>
+$(document).ready(function(){
+$("#testQuestion4").click(function(){
+
+    $("#answerQuestion4").fadeToggle("slow");
+
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+$("#testQuestion5").click(function(){
+
+    $("#answerQuestion5").fadeToggle("slow");
+
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+$("#testQuestion6").click(function(){
+
+    $("#answerQuestion6").fadeToggle("slow");
+
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+$("#testQuestion7").click(function(){
+
+    $("#answerQuestion7").fadeToggle("slow");
+
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+$("#testQuestion8").click(function(){
+
+    $("#answerQuestion8").fadeToggle("slow");
+
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+$("#testQuestion9").click(function(){
+
+    $("#answerQuestion9").fadeToggle("slow");
+
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+$("#testQuestion10").click(function(){
+
+    $("#answerQuestion10").fadeToggle("slow");
+
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+$("#testQuestion11").click(function(){
+
+    $("#answerQuestion11").fadeToggle("slow");
+
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+$("#testQuestion12").click(function(){
+
+    $("#answerQuestion12").fadeToggle("slow");
+
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+$("#testQuestion13").click(function(){
+
+    $("#answerQuestion13").fadeToggle("slow");
+
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+$("#testQuestion14").click(function(){
+
+    $("#answerQuestion14").fadeToggle("slow");
+
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+$("#testQuestion15").click(function(){
+
+    $("#answerQuestion15").fadeToggle("slow");
+
+});
+});
+</script>
+
+
+
+
+
+
   </body>
-</html>
+  </html>
