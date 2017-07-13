@@ -42,8 +42,11 @@
   }
 }
 @media only screen and (max-width: 767px) {
+  .navbar-brand {
+    padding: 5px 15px;
+  }
 .navbar-brand img{
-  display:none;
+  width: 40px;
 }
 }
 /*1030*/

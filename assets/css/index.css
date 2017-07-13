@@ -603,7 +603,7 @@ h1{
   font-size: 22px;
 }
 .box1 span .fa {
-  padding-top: 15px;
+  padding-top: 19px;
 }
   /*bootstrap try */
   * {
@@ -1464,6 +1464,11 @@ font-size:23px
 }
 .pricing-footer,.pricing-footer2,.pricing-footer3 {
   padding-bottom: 20px;
+}
+}
+@media screen and (max-width:767px){
+#Indexslogan {
+  margin-top: 50px;
 }
 }
 @media screen and (max-width:600px){
