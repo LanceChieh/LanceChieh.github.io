@@ -1,12 +1,10 @@
-// Initialize Firebase
-
-var config = {
-	apiKey: "AIzaSyALpNZ4uw4cAt74i14ka8MYmlZxQTHR97k",
-	authDomain: "tinichats-53c3e.firebaseapp.com",
-	databaseURL: "https://tinichats-53c3e.firebaseio.com",
-	projectId: "tinichats-53c3e",
-	storageBucket: "tinichats-53c3e.appspot.com",
-	messagingSenderId: "982360403003"
-};
-
-firebase.initializeApp(config);
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCzpuoHZVVhctLMOtaum8H0Oabwr4CG2q4",
+    authDomain: "tiniline-9f0c5.firebaseapp.com",
+    databaseURL: "https://tiniline-9f0c5.firebaseio.com",
+    projectId: "tiniline-9f0c5",
+    storageBucket: "tiniline-9f0c5.appspot.com",
+    messagingSenderId: "779146343538"
+  };
+  firebase.initializeApp(config);

@@ -2,10 +2,10 @@
 .navbar-toggle{border-color:white;background-color:#ddd;}
 .navbar-brand img{width:62px;}
 #myNavbar{margin-top:20px;}
-.navbar-nav li a strong{color:#33ccff;}
+.navbar-nav li a strong{color:#00c300;}
 .navbar-inverse .navbar-nav>li>a{font-size:24px;}
 .navbar-inverse .navbar-toggle{border-color:white;}
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{border-color:#33ccff;}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{border-color:#00c300;}
 @media only screen and (min-width:762px) and (max-width:1030px){.navbar-inverse .navbar-nav>li>a{font-size:22px;}
 }
 @media only screen and (min-width:768px){nav{height:90px;}
